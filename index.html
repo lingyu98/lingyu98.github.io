@@ -1,0 +1,542 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Lingyu Zhang</title>
+
+  <!-- <div style="width:1000px;height:1000px;border:1px solid #000; z-index: -900">This is a rectangle!</div> -->
+  <meta name="author" content="Lingyu Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>">
+</head>
+<!-- <div class="v1"></div>
+<div class="v2"></div> -->
+
+<body style="background-color:white">
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <!-- <div style="width:500px;height:100px;border:1px solid #000;">This is a rectangle!</div> -->
+                  <p style="text-align:center;">
+                    <name>Lingyu Zhang</name>
+                  </p>
+                  <p style="text-align:center;color:grey;font: size -1px;">
+                    M.S. student in EE</a> <br> <!--  <a href="https://www.ee.columbia.edu/">EE</a> -->
+                    Columbia University <br>
+                    lz2814@columbia.edu <br>
+                  <p style=' font-size:medium;'> I am a final-year Master's student at Columbia University. I
+                    currently
+                    work on
+                    robust computer vision models, under the supervision of Prof. <a style='font-size:medium;'
+                      href="http://www.cs.columbia.edu/~junfeng/">Junfeng
+                      Yang</a> and Prof. <a style='font-size:medium;' href="http://www.cs.columbia.edu/~vondrick/">Carl
+                      Vondrick</a>, and work closely with PhD student <a style='font-size:medium;'
+                      href="http://www.cs.columbia.edu/~mcz/">Chengzhi
+                      Mao</a>. <br><br>
+
+                    Prior to Columbia, I earned my Bachelor's degree at <a style='font-size:medium;'
+                      href='https://www.nju.edu.cn/'>Nanjing University</a>, China, where I did my
+                    undergraduate thesis on neural image compression, advised by Prof. Qiu Shen.
+                  </p>
+                  <p style="text-align:center">
+                    <a href="data/CV_Dec22.pdf">CV</a> &nbsp/&nbsp
+                    <a href="https://www.linkedin.com/in/lingyuz/">Linkedin</a> &nbsp/&nbsp
+                    <!--  <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
+                    <!--  <a href="https://scholar.google.com/citations?hl=en&user=9W2e5cgAAAAJ">Google Scholar</a> 
+                    &nbsp/&nbsp -->
+                    <a href="https://twitter.com/mkbzly">Twitter</a> &nbsp/&nbsp
+                    <a href="https://github.com/lingyu98">Github</a>
+                  </p>
+                </td>
+                <td style="padding:2.5%;width:40%;max-width:40%">
+                  <a href="images/profile photo.jpg"><img style="width:100%;max-width:100%" alt="profile photo"
+                      src="images/profile photo.jpg" class="hoverZoomLink"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>Research</heading>
+                  <p style='font-size:medium;'>
+                    I am broadly interested in machine perception and understanding neural networks. In particular,
+                    improving the robustness and generalization of machine learning models, understanding the behavior
+                    of deep networks, and explaining and advancing them through information-principled lenses.
+                    <!-- Representative papers are <span class="highlight">highlighted</span> -->
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr onmouseout="robustvideo_stop()" onmouseover="robustvideo_start()" bgcolor='white'>
+                <td style="padding:20px;width:25%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='robust_video_vid'><video width=100% height=100% muted autoplay loop>
+                        <source src="images/robust_video_vid.m4v" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video></div>
+                    <img src='images/robustvideo.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function dreamfusion_start() {
+                      document.getElementById('dreamfusion_image').style.opacity = "1";
+                    }
+
+                    function dreamfusion_stop() {
+                      document.getElementById('dreamfusion_image').style.opacity = "0";
+                    }
+                    dreamfusion_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <!-- <a href="https://dreamfusion3d.github.io/"> -->
+                  <papertitle>Adversarially Robust Video Perception by Seeing Motion</papertitle>
+                  <!-- </a> -->
+                  <br>
+                  <strong>Lingyu Zhang</strong>,
+                  Chengzhi Mao,
+                  Junfeng Yang,
+                  Carl Vondrick
+                  <br>
+                  <em>In submission</em>
+                  <br>
+                  <!-- <a href="https://dreamfusion3d.github.io/">project page</a>
+                  / -->
+                  <!-- <a href="https://arxiv.org/abs/2209.14988">arXiv</a>
+                  / -->
+                  <!-- <a href="https://dreamfusion3d.github.io/gallery.html">gallery</a> -->
+                  <p></p>
+                  <p>
+                    We find that adversarial attacks generated for fooling video classifiers also collaterally corrupt
+                    motion. We propose to defend against attacks at test time by restoring disrupted motion.
+
+                  </p>
+                </td>
+              </tr>
+
+
+              <tr onmouseout="equi_stop()" onmouseover="equi_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle;">
+                  <div class="one">
+                    <div class="two" id='equi_pic'>
+                      <img src='images/equi_pic.png' width="160">
+                    </div>
+                    <img src='images/equi_pic.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function samurai_start() {
+                      document.getElementById('samurai_image').style.opacity = "1";
+                    }
+
+                    function samurai_stop() {
+                      document.getElementById('samurai_image').style.opacity = "0";
+                    }
+                    samurai_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
+                  <papertitle>Robust Perception through Equivariance
+                  </papertitle>
+                  </a>
+                  <br>
+                  Chengzhi Mao,
+                  <strong>Lingyu Zhang</strong>,
+                  Abhishek Vaibhav Joshi,
+                  Junfeng Yang,
+                  Hao Wang,
+                  Carl Vondrick
+                  <br>
+                  <em>In submission</em>
+                  <br>
+                  <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+                  <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
+                  <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
+                  <p></p>
+                  <p>
+                    We introduce a framework that uses the dense intrinsic constraints in natural images to robustify
+                    inference, allowing the model to adjust dynamically to each
+                    individual image's unique and potentially novel characteristics at inference time.
+                  </p>
+                </td>
+              </tr>
+
+
+
+
+              <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle;">
+                  <div class="one">
+                    <div class="two" id='equi_pic'>
+                      <img src='images/stereo_pic.png' width="160">
+                    </div>
+                    <img src='images/stereo_pic.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function samurai_start() {
+                      document.getElementById('samurai_image').style.opacity = "1";
+                    }
+
+                    function samurai_stop() {
+                      document.getElementById('samurai_image').style.opacity = "0";
+                    }
+                    samurai_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <a href="https://link.springer.com/chapter/10.1007/978-3-030-87361-5_3">
+                    <papertitle>A Stereo Matching Method for Three-Dimensional Eye Localization of Autostereoscopic
+                      Display
+                    </papertitle>
+                  </a>
+                  <br>
+                  Bangpeng Xiao,
+                  Shenyuan Ye,
+                  Xicai Li,
+                  Min Li,
+                  <strong>Lingyu Zhang, </strong>
+                  Yuanqing Wang
+                  <br>
+                  <em>International Conference on Image and Graphics</em>, 2021
+                  <br>
+                  <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+                  <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
+                  <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
+                  <p></p>
+                  <p>
+                    We improve and optimize the ZNCC stereo matching algorithm for three-dimensional eye localization.
+                    We improve operation logic of the matching and optimize the scanning strategy based on the
+                    application scenarios.
+                    algorithm
+                  </p>
+                </td>
+              </tr>
+
+
+
+              <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <tbody>
+                  <tr>
+                    <td>
+                      <heading>Projects</heading>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="100%" align="center" border="0" cellpadding="20">
+                <tbody>
+
+
+                  <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
+                    <td style="padding:20px;width:25%;vertical-align:middle;">
+                      <div class="one">
+                        <div class="two" id='equi_pic'>
+                          <img src='images/dceb_pic.png' width="160">
+                        </div>
+                        <!-- <img src='images/dceb_pic.png' width="160"> -->
+                      </div>
+                      <script type="text/javascript">
+                        function samurai_start() {
+                          document.getElementById('samurai_image').style.opacity = "1";
+                        }
+
+                        function samurai_stop() {
+                          document.getElementById('samurai_image').style.opacity = "0";
+                        }
+                        samurai_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:top">
+                      <a href="data/ECIB_2211.pdf">
+                        <papertitle>Entropy Constrained Information Bottleneck
+                        </papertitle>
+                      </a>
+                      <br>
+                      <strong>Lingyu Zhang </strong>
+                      <br>
+                      <em>E6876 Final Project</em>, 2022
+                      <br>
+                      <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
+                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
+                      <p></p>
+                      <p>
+                        We propose to use deterministic encoding along with actual quantization
+                        on latents, rendering the IB problem a source compression. By doing so, finite non-trivial
+                        mutual
+                        information can be estimated.
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <tr onmouseout="samurai_start()" onmouseover="samurai_stop()">
+                    <td style="padding:20px;width:25%;vertical-align:middle; ">
+                      <div class="one">
+                        <div class="two" id='equi_pic'>
+                          <img src='images/adv_dl_fig.png' width="160">
+                        </div>
+                        <!-- <img src='images/adv_dl_fig.png' width="160"> -->
+                      </div>
+                      <script type="text/javascript">
+                        function samurai_start() {
+                          document.getElementById('samurai_image').style.opacity = "1";
+                        }
+
+                        function samurai_stop() {
+                          document.getElementById('samurai_image').style.opacity = "0";
+                        }
+                        samurai_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:top;">
+                      <a href="data/adv_dl_proj.pdf">
+                        <papertitle>Black-box Adversarial Attacks with Style Information
+                        </papertitle>
+                      </a>
+                      <br>
+                      Christodoulos Constantinides,
+                      <strong>Lingyu Zhang </strong>
+                      <br>
+                      <em>E6691 Final Project</em>, 2022
+                      <br>
+                      <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
+                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
+                      <p></p>
+                      <p>
+                        We propose two types of blackbox attacks based on style transfer and
+                        investigate how robust classifiers behave against them.
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
+                    <td style="padding:20px;width:25%;vertical-align:middle;">
+                      <div class="one">
+                        <div class="two" id='equi_pic'>
+                          <img src='images/spec_fig.png' width="160">
+                        </div>
+                        <img src='images/spec_fig.png' width="160">
+                      </div>
+                      <script type="text/javascript">
+                        function samurai_start() {
+                          document.getElementById('samurai_image').style.opacity = "1";
+                        }
+
+                        function samurai_stop() {
+                          document.getElementById('samurai_image').style.opacity = "0";
+                        }
+                        samurai_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="data/CS4774_report_22.pdf">
+                        <papertitle>Unsupervised Harmonic Sound Source Separation with Spectral Clustering
+                        </papertitle>
+                      </a>
+                      <br>
+                      Yiming Lin,
+                      Lucy Wang,
+                      <strong>Lingyu Zhang, </strong>
+                      Zhaoyuan Deng
+                      <br>
+                      <em>CS4774 Final Project</em>, 2021
+                      <br>
+                      <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
+                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
+                      <p></p>
+                      <p>
+                        We modeled mixed sources of audio signals by sinusoidal modeling with Short-Time Fourier
+                        Transforms. Based on selected spectral peaks of sinusoidal parameters, we constructed a
+                        similarity function between time and frequency components, and applied spectral clustering to
+                        globally partition the data.
+                      </p>
+                    </td>
+                  </tr>
+
+
+
+                  <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
+                    <td style="padding:20px;width:25%;vertical-align:middle;">
+                      <div class="one">
+                        <div class="two" id='equi_pic'>
+                          <img src='images/RL_pic.png' width="160">
+                        </div>
+                        <img src='images/RL_pic.png' width="160">
+                      </div>
+                      <script type="text/javascript">
+                        function samurai_start() {
+                          document.getElementById('samurai_image').style.opacity = "1";
+                        }
+
+                        function samurai_stop() {
+                          document.getElementById('samurai_image').style.opacity = "0";
+                        }
+                        samurai_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="data/E6885_report.pdf">
+                        <papertitle>Exploring Diverse Ways To Improve An Agent On
+                          Active Object Localization With Deep Reinforcement Learning
+                        </papertitle>
+                      </a>
+                      <br>
+                      Jiawei Lu,
+                      <strong>Lingyu Zhang, </strong>
+                      Xinyi Liu,
+                      Yukai Song,
+                      Zixuan Yan
+                      <br>
+
+                      <em>E6885 Final Project</em>, 2021
+                      <br>
+                      <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
+                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
+                      <p></p>
+                      <p>
+                        We proposed improvement to using DQNs for Object Detection from four aspects,
+                        including using advanced CNNs to generate state representation, defining more flexible
+                        action spaces, changing reward function to avoid undesired activity in agent
+                        and using mask instead cross for multiple objects.
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <tr onmouseout="samurai_start()" onmouseover="samurai_stop()">
+                    <td style="padding:20px;width:25%;vertical-align:middle; ">
+                      <div class="one">
+                        <div class="two" id='equi_pic'>
+                          <img src='images/thesis_fig.png' width="160">
+                        </div>
+                        <!-- <img src='images/adv_dl_fig.png' width="160"> -->
+                      </div>
+                      <script type="text/javascript">
+                        function samurai_start() {
+                          document.getElementById('samurai_image').style.opacity = "1";
+                        }
+
+                        function samurai_stop() {
+                          document.getElementById('samurai_image').style.opacity = "0";
+                        }
+                        samurai_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:top;">
+                      <a href="data/thesis_compression.pdf">
+                        <papertitle>Design and Optimization of a Multi-scale Representation based Image Com- pression
+                          Network
+                        </papertitle>
+                      </a>
+                      <br>
+                      <strong>Lingyu Zhang </strong>
+                      <br>
+                      <em>Undergraduate Thesis</em>, 2021
+                      <br>
+                      <a href="data/thesis_compression.pdf">thesis (Chinese)</a>
+                      <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
+                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
+                      <p></p>
+                      <p>
+                        Learned image compression has surpassed the rate-distortion performance of hand-crafted
+                        traditional image codecs in recent years. However, they are not yet practical because of their
+                        significantly slower decoding speed than classical algorithms. We investigated the possibility
+                        of directly performing vision tasks in the latent space and found that using a
+                        multi-scale encoder helped preserve semantic meaning in latent codes while maintaining
+                        state-of-the-art compression rates
+                      </p>
+                    </td>
+                  </tr>
+
+
+                  <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
+                    <td style="padding:20px;width:25%;vertical-align:middle;">
+                      <div class="one">
+                        <div class="two" id='equi_pic'>
+                          <img src='images/ddrsgm_fig.png' width="160">
+                        </div>
+                        <img src='images/ddrsgm_fig.png' width="160">
+                      </div>
+                      <script type="text/javascript">
+                        function samurai_start() {
+                          document.getElementById('samurai_image').style.opacity = "1";
+                        }
+
+                        function samurai_stop() {
+                          document.getElementById('samurai_image').style.opacity = "0";
+                        }
+                        samurai_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="data/ddrsgm_report.pdf">
+                        <papertitle>
+                          Dynamic Disparity Range Semi-Global Matching for Video Stereo Matching
+                        </papertitle>
+                      </a>
+                      <br>
+                      <strong>Lingyu Zhang, </strong>
+                      <br>
+
+                      <em>Computer Vision Final Project</em>, 2020
+                      <br>
+                      <a href="data/ddrsgm_slides.pdf">slides</a> /
+                      <a href="data/ddrsgm_report.pdf">report (Chinese)</a>
+                      <p></p>
+                      <p>
+                        Implemented an accelerated stereo matching algorithm for video sequences, utilizing a dynamic
+                        disparity range search based on temporal correlation between frames, saving 21% of computational
+                        time with minimal accuracy loss. Designed a Divided Section cost function, preserving more
+                        information than Census cost, achieving 18% better matching accuracy while trading off
+                        computational complexity.
+                      </p>
+                    </td>
+                  </tr>
+
+
+                </tbody>
+              </table>
+              <table
+                style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody>
+                  <tr>
+                    <td style="padding:0px">
+                      <br>
+                      <p style="text-align:right;font-size:small;">
+                        Webpage template from <a href="https://jonbarron.info/">Jon Barron</a>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+        </td>
+      </tr>
+  </table>
+</body>
+
+</html>
