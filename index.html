@@ -115,6 +115,29 @@
               </tr>
             </tbody>
           </table>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>News</heading>
+                  <p style='font-size:medium;'>
+                    [2023 April] Our <a style='font-size:medium;' , href="https://arxiv.org/abs/2212.06079">paper</a>
+                    was accepted at ICML 2023
+                  </p>
+                  <p style='font-size:medium;'>
+                    [2023 Feb] Started working as an RA at Columbia DVMM lab
+                  </p>
+                  <p style='font-size:medium;'>
+                    [2023 feb] Graduated from Columbia as an MS student
+                    <!-- Representative papers are <span class="highlight">highlighted</span> -->
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -135,6 +158,58 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+
+              <tr onmouseout="equi_stop()" onmouseover="equi_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle;">
+                  <div class="one">
+                    <div class="two" id='equi_pic'>
+                      <img src='images/equi_pic.png' width="160">
+                    </div>
+                    <img src='images/equi_pic.png' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function samurai_start() {
+                      document.getElementById('samurai_image').style.opacity = "1";
+                    }
+
+                    function samurai_stop() {
+                      document.getElementById('samurai_image').style.opacity = "0";
+                    }
+                    samurai_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
+                  <papertitle>Robust Perception through Equivariance
+                  </papertitle>
+                  <!-- </a> -->
+                  <br>
+                  Chengzhi Mao,
+                  <strong>Lingyu Zhang</strong>,
+                  Abhishek Vaibhav Joshi,
+                  Junfeng Yang,
+                  Hao Wang,
+                  Carl Vondrick
+                  <br>
+                  <em>ICML 2023</em>
+                  <br>
+                  <a href="https://arxiv.org/abs/2212.06079">arxiv</a> /
+                  <a href="https://equi4robust.cs.columbia.edu">project page</a>
+                  <br>
+                  <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+                  <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
+                  <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
+                  <p></p>
+                  <p>
+                    We introduce a framework that uses the dense intrinsic constraints in natural images to robustify
+                    inference, allowing the model to adjust dynamically to each
+                    individual image's unique and potentially novel characteristics at inference time.
+                  </p>
+                </td>
+              </tr>
+
+
               <tr onmouseout="robustvideo_stop()" onmouseover="robustvideo_start()" bgcolor='white'>
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
@@ -183,57 +258,6 @@
                   </p>
                 </td>
               </tr>
-
-
-              <tr onmouseout="equi_stop()" onmouseover="equi_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='equi_pic'>
-                      <img src='images/equi_pic.png' width="160">
-                    </div>
-                    <img src='images/equi_pic.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:top">
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
-                  <papertitle>Robust Perception through Equivariance
-                  </papertitle>
-                  <!-- </a> -->
-                  <br>
-                  Chengzhi Mao,
-                  <strong>Lingyu Zhang</strong>,
-                  Abhishek Vaibhav Joshi,
-                  Junfeng Yang,
-                  Hao Wang,
-                  Carl Vondrick
-                  <br>
-                  <em>In submission</em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2212.06079">arxiv</a> /
-                  <a href="https://equi4robust.cs.columbia.edu">project page</a>
-                  <br>
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                  <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                  <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
-                  <p></p>
-                  <p>
-                    We introduce a framework that uses the dense intrinsic constraints in natural images to robustify
-                    inference, allowing the model to adjust dynamically to each
-                    individual image's unique and potentially novel characteristics at inference time.
-                  </p>
-                </td>
-              </tr>
-
 
               <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle;">
