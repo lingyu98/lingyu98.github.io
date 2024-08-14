@@ -124,6 +124,9 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>News</heading>
                   <p style='font-size:medium;'>
+                    [2024 Aug] Our platform for Human-AI teaming CREW is released
+                  </p>
+                  <p style='font-size:medium;'>
                     [2023 Aug] Joined Duke General Robotics Lab
                   </p>
                   <p style='font-size:medium;'>
@@ -163,6 +166,57 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+
+
+              <tr onmouseout="crew_stop()" onmouseover="crew_start()">
+                <td style="padding:10px;width:25%;vertical-align:middle;">
+                  <div class="one">
+                    <div class="two" id='crew_pic'>
+                      <img src='images/crew-thumbnails.gif' width="160">
+                    </div>
+                    <img src='images/crew-thumbnails.gif' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function samurai_start() {
+                      document.getElementById('samurai_image').style.opacity = "1";
+                    }
+
+                    function samurai_stop() {
+                      document.getElementById('samurai_image').style.opacity = "0";
+                    }
+                    samurai_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
+                  <papertitle>CREW: Facilitating Human-AI Teaming
+                  </papertitle>
+                  <!-- </a> -->
+                  <br>
+                  <strong>Lingyu Zhang</strong>,
+                  Zhengran Ji,
+                  Boyuan Chen
+                  <br>
+                  <!-- <em>ICML 2023</em> -->
+                  <br>
+                  <a href="https://arxiv.org/abs/2408.00170">arxiv</a> /
+                  <a href="http://www.generalroboticslab.com/blogs/blog/2024-08-01-crew/index.html">project page</a> /
+                  <a href="https://www.youtube.com/watch?v=RINSo3uI0dI">video</a> /
+                  <a href="https://generalroboticslab.github.io/crew-docs/index.html">documentation</a>
+                  <br>
+                  <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+                  <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
+                  <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
+                  <p></p>
+                  <p>
+                    We introduce a platform for Human-AI teaming research. CREW offers extensible environment design,
+                    enables real-time
+                    human-AI communication, supports hybrid Human-AI teaming, parallel sessions, multimodal feedback,
+                    and physiological data collection, and features ML community-friendly algorithm design.
+                  </p>
+                </td>
+              </tr>
 
 
               <tr onmouseout="equi_stop()" onmouseover="equi_start()">
