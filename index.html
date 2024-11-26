@@ -124,21 +124,17 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <heading>News</heading>
                   <p style='font-size:medium;'>
-                    [2024 Aug] Our platform for Human-AI teaming CREW is released
+                    [11/2024] Our paper CREW is accepted to TMLR 11/2024
                   </p>
                   <p style='font-size:medium;'>
-                    [2023 Aug] Joined Duke General Robotics Lab
+                    [9/2024] Our paper GUIDE is accepted at Neurips 2024
                   </p>
                   <p style='font-size:medium;'>
-                    [2023 April] Our <a style='font-size:medium;' , href="https://arxiv.org/abs/2212.06079">paper</a>
-                    was accepted at ICML 2023
+                    [9/2024] Our paper HUMAC is released on Arxiv
                   </p>
                   <p style='font-size:medium;'>
-                    [2023 Feb] Started working as an RA at Columbia DVMM lab
+                    [8/2024] Our platform for Human-AI teaming CREW is released
                   </p>
-                  <p style='font-size:medium;'>
-                    [2023 feb] Graduated from Columbia as an MS student
-                    <!-- Representative papers are <span class="highlight">highlighted</span> -->
                   </p>
                 </td>
               </tr>
@@ -153,9 +149,7 @@
                   <heading>Research</heading>
                   <p style='font-size:medium;'>
                     I am broadly interested in machine learning for decision making and perception. In particular,
-                    advancing the
-                    performance of agents in the real world and improving the robustness and generalization of machine
-                    learning models.
+                    advancing the real-world agents by improving the robustness and generalization of ML models.
                     <!-- Representative papers are <span class="highlight">highlighted</span> -->
                   </p>
                 </td>
@@ -167,10 +161,54 @@
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
 
+              <tr onmouseout="guide_stop()" onmouseover="guide_start()">
+                <td style="padding:20px;width:25%;vertical-align:middle;">
+                  <div class="one">
+                    <div class="two" id='guide_pic'>
+                      <img src='images/GUIDE.jpg' width="160">
+                    </div>
+                    <img src='images/GUIDE.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function samurai_start() {
+                      document.getElementById('samurai_image').style.opacity = "1";
+                    }
+
+                    function samurai_stop() {
+                      document.getElementById('samurai_image').style.opacity = "0";
+                    }
+                    samurai_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:top">
+                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
+                  <papertitle>GUIDE: Real-Time Human-Shaped Agents
+                  </papertitle>
+                  <!-- </a> -->
+                  <br>
+                  <strong>Lingyu Zhang</strong>,
+                  Zhengran Ji, Nicholas R Waytowich, Boyuan Chen
+                  <br>
+                  <em>Neurips 2024</em>
+                  <br>
+                  <a href="https://openreview.net/pdf/4c5b77e64e14afd376d04a6edb956072c602816b.pdf">paper</a> /
+                  <a href="http://www.generalroboticslab.com/blogs/blog/2024-10-21-guide/">project page</a> /
+                  <a href="https://www.youtube.com/watch?v=sMlvE9wYxj0">video</a>
+
+                  <br>
+                  <p></p>
+                  <p>
+                    Real-time human-guided RL with dense continuous rewards and a learned feedback
+                    model to reduce human input and enable continual training. We also provide insights on what makes a
+                    good human trainer for agents.
+
+                  </p>
+                </td>
+              </tr>
 
 
               <tr onmouseout="crew_stop()" onmouseover="crew_start()">
-                <td style="padding:10px;width:25%;vertical-align:middle;">
+                <td style="padding:20px;width:25%;vertical-align:middle;">
                   <div class="one">
                     <div class="two" id='crew_pic'>
                       <img src='images/crew-thumbnails.gif' width="160">
@@ -198,16 +236,13 @@
                   Zhengran Ji,
                   Boyuan Chen
                   <br>
-                  <!-- <em>ICML 2023</em> -->
+                  <em>TMLR 2024</em>
                   <br>
-                  <a href="https://arxiv.org/abs/2408.00170">arxiv</a> /
+                  <a href="https://openreview.net/pdf?id=ZRXwHRXm8i">paper</a> /
                   <a href="http://www.generalroboticslab.com/blogs/blog/2024-08-01-crew/index.html">project page</a> /
                   <a href="https://www.youtube.com/watch?v=RINSo3uI0dI">video</a> /
                   <a href="https://generalroboticslab.github.io/crew-docs/index.html">documentation</a>
                   <br>
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                  <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                  <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
                   <p></p>
                   <p>
                     We introduce a platform for Human-AI teaming research. CREW offers extensible environment design,
@@ -218,6 +253,52 @@
                 </td>
               </tr>
 
+
+              <tr onmouseout="humac_stop()" onmouseover="humac_start()">
+                <td style="padding:10px;width:25%;vertical-align:middle;">
+                  <div class="one">
+                    <div class="two" id='guide_pic'>
+                      <img src='images/HUMAC.jpg' width="160">
+                    </div>
+                    <img src='images/HUMAC.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function samurai_start() {
+                      document.getElementById('samurai_image').style.opacity = "1";
+                    }
+
+                    function samurai_stop() {
+                      document.getElementById('samurai_image').style.opacity = "0";
+                    }
+                    samurai_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:top">
+                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
+                  <papertitle>HUMAC: Enabling Multi-Robot Collaboration from Single-Human Guidance
+                  </papertitle>
+                  <!-- </a> -->
+                  <br>
+                  Zhengran Ji,
+                  <strong>Lingyu Zhang</strong>,
+                  Paul Sajda, Boyuan Chen
+                  <br>
+                  <em>Preprint 2024</em>
+                  <br>
+                  <a href="https://arxiv.org/pdf/2409.19831">arxiv</a> /
+                  <a href="http://www.generalroboticslab.com/blogs/blog/2024-09-29-humac/index.html">project page</a> /
+                  <a href="https://www.youtube.com/watch?v=2X92LnFTutY">video</a>
+
+                  <br>
+                  <p></p>
+                  <p>
+                    Enables multi-robot collaboration from single-human guidance. Inspired by the human theory-of-mind,
+                    HUMAC leverages human-robot interface
+                    that allows a single human to guide multiple robots simultaneously, through which collaborative
+                    behavior can be learned.
+                  </p>
+                </td>
+              </tr>
 
               <tr onmouseout="equi_stop()" onmouseover="equi_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle;">
@@ -253,7 +334,7 @@
                   <br>
                   <em>ICML 2023</em>
                   <br>
-                  <a href="https://arxiv.org/abs/2212.06079">arxiv</a> /
+                  <a href="https://proceedings.mlr.press/v202/mao23d.html">paper</a> /
                   <a href="https://equi4robust.cs.columbia.edu">project page</a>
                   <br>
                   <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
@@ -299,7 +380,7 @@
                   Junfeng Yang,
                   Carl Vondrick
                   <br>
-                  <em>In submission</em>
+                  <em>Preprint 2023</em>
                   <br>
                   <a href="https://arxiv.org/abs/2212.07815">arxiv</a> /
                   <a href="https://motion4robust.cs.columbia.edu">project page</a>
@@ -413,7 +494,7 @@
                   <br>
                   <strong>Lingyu Zhang </strong>
                   <br>
-                  <em>COMS6998 Final Project</em>, 2022
+                  <em>Representation Learning Final Project</em>, 2022
                   <br>
                   <a href="data/Rep_Learn_Final.pdf">paper</a>
                   <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
@@ -457,7 +538,7 @@
                   <br>
                   <strong>Lingyu Zhang </strong>
                   <br>
-                  <em>E6876 Final Project</em>, 2022
+                  <em>Sparse and Low-Dimensional Models for High-Dimensional Data Final Project</em>, 2022
                   <br>
                   <a href="data/ECIB_2211.pdf">paper</a>
                   <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
@@ -473,15 +554,15 @@
                 </td>
               </tr>
 
-
+              <!-- 
               <tr onmouseout="samurai_start()" onmouseover="samurai_stop()">
                 <td style="padding:20px;width:25%;vertical-align:middle; ">
                   <div class="one">
                     <div class="two" id='equi_pic'>
                       <img src='images/adv_dl_fig.png' width="160">
-                    </div>
-                    <!-- <img src='images/adv_dl_fig.png' width="160"> -->
-                  </div>
+                    </div> -->
+              <!-- <img src='images/adv_dl_fig.png' width="160"> -->
+              <!-- </div>
                   <script type="text/javascript">
                     function samurai_start() {
                       document.getElementById('samurai_image').style.opacity = "1";
@@ -493,28 +574,28 @@
                     samurai_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:75%;vertical-align:top;">
-                  <!-- <a href="data/adv_dl_proj.pdf"> -->
-                  <papertitle>Black-box Adversarial Attacks with Style Information
-                  </papertitle>
-                  <!-- </a> -->
-                  <br>
+                <td style="padding:20px;width:75%;vertical-align:top;"> -->
+              <!-- <a href="data/adv_dl_proj.pdf"> -->
+              <!-- <papertitle>Black-box Adversarial Attacks with Style Information
+                  </papertitle> -->
+              <!-- </a> -->
+              <!-- <br>
                   Christodoulos Constantinides,
                   <strong>Lingyu Zhang </strong>
                   <br>
                   <em>E6691 Final Project</em>, 2022
                   <br>
-                  <a href="data/adv_dl_proj.pdf">paper</a>
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+                  <a href="data/adv_dl_proj.pdf">paper</a> -->
+              <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
                       <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
                       <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
-                  <p></p>
+              <!-- <p></p>
                   <p>
                     We propose two types of blackbox attacks based on style transfer and
                     investigate how robust classifiers behave against them.
                   </p>
                 </td>
-              </tr>
+              </tr> -->
 
 
               <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
@@ -542,12 +623,12 @@
                   </papertitle>
                   <!-- </a> -->
                   <br>
+                  <strong>Lingyu Zhang, </strong>
                   Yiming Lin,
                   Lucy Wang,
-                  <strong>Lingyu Zhang, </strong>
                   Zhaoyuan Deng
                   <br>
-                  <em>COMS4774 Final Project</em>, 2021
+                  <em>Unsupervised Machine Learning Final Project</em>, 2021
                   <br>
                   <a href="data/CS4774_report_22.pdf">paper</a>
                   <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
@@ -566,7 +647,7 @@
 
 
 
-              <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
+              <!-- <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle;">
                   <div class="one">
                     <div class="two" id='equi_pic'>
@@ -585,27 +666,27 @@
                     samurai_stop()
                   </script>
                 </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <!-- <a href="data/E6885_report.pdf"> -->
-                  <papertitle>Exploring Diverse Ways To Improve An Agent On
+                <td style="padding:20px;width:75%;vertical-align:middle"> -->
+              <!-- <a href="data/E6885_report.pdf"> -->
+              <!-- <papertitle>Exploring Diverse Ways To Improve An Agent On
                     Active Object Localization With Deep Reinforcement Learning
-                  </papertitle>
-                  <!-- </a> -->
-                  <br>
+                  </papertitle> -->
+              <!-- </a> -->
+              <!-- <br>
                   Jiawei Lu,
                   <strong>Lingyu Zhang, </strong>
                   Xinyi Liu,
                   Yukai Song,
                   Zixuan Yan
-                  <br>
+                  <br> -->
 
-                  <em>E6885 Final Project</em>, 2021
+              <!-- <em>E6885 Final Project</em>, 2021
                   <br>
-                  <a href="data/E6885_report.pdf">paper</a>
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
+                  <a href="data/E6885_report.pdf">paper</a> -->
+              <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
                       <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
                       <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
-                  <p></p>
+              <!-- <p></p>
                   <p>
                     We proposed improvement to using DQNs for Object Detection from four aspects,
                     including using advanced CNNs to generate state representation, defining more flexible
@@ -613,7 +694,7 @@
                     and using mask instead cross for multiple objects.
                   </p>
                 </td>
-              </tr>
+              </tr> -->
 
 
               <tr onmouseout="samurai_start()" onmouseover="samurai_stop()">
