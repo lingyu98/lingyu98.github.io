@@ -149,7 +149,8 @@
                   <heading>Research</heading>
                   <p style='font-size:medium;'>
                     I am broadly interested in machine learning for decision making and perception. In particular,
-                    advancing the real-world agents by improving the robustness and generalization of ML models.
+                    finding inspiration from humans for advancing the real-world agents by improving the robustness and
+                    generalization of ML models.
                     <!-- Representative papers are <span class="highlight">highlighted</span> -->
                   </p>
                 </td>
@@ -160,6 +161,53 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
+
+
+              <tr onmouseout="humac_stop()" onmouseover="humac_start()">
+                <td style="padding:10px;width:25%;vertical-align:middle;">
+                  <div class="one">
+                    <div class="two" id='guide_pic'>
+                      <img src='images/HUMAC.jpg' width="160">
+                    </div>
+                    <img src='images/HUMAC.jpg' width="160">
+                  </div>
+                  <script type="text/javascript">
+                    function samurai_start() {
+                      document.getElementById('samurai_image').style.opacity = "1";
+                    }
+
+                    function samurai_stop() {
+                      document.getElementById('samurai_image').style.opacity = "0";
+                    }
+                    samurai_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:60%;vertical-align:top">
+                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
+                  <papertitle>HUMAC: Enabling Multi-Robot Collaboration from Single-Human Guidance
+                  </papertitle>
+                  <!-- </a> -->
+                  <br>
+                  Zhengran Ji,
+                  <strong>Lingyu Zhang</strong>,
+                  Paul Sajda, Boyuan Chen
+                  <br>
+                  <em>ICRA 2025</em>
+                  <br>
+                  <a href="https://arxiv.org/pdf/2409.19831">arxiv</a> /
+                  <a href="http://www.generalroboticslab.com/blogs/blog/2024-09-29-humac/index.html">project page</a> /
+                  <a href="https://www.youtube.com/watch?v=2X92LnFTutY">video</a>
+
+                  <br>
+                  <p></p>
+                  <p>
+                    Enables multi-robot collaboration from single-human guidance. Inspired by the human theory-of-mind,
+                    HUMAC leverages human-robot interface
+                    that allows a single human to guide multiple robots simultaneously, through which collaborative
+                    behavior can be learned.
+                  </p>
+                </td>
+              </tr>
 
               <tr onmouseout="guide_stop()" onmouseover="guide_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle;">
@@ -253,52 +301,6 @@
                 </td>
               </tr>
 
-
-              <tr onmouseout="humac_stop()" onmouseover="humac_start()">
-                <td style="padding:10px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='guide_pic'>
-                      <img src='images/HUMAC.jpg' width="160">
-                    </div>
-                    <img src='images/HUMAC.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:60%;vertical-align:top">
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
-                  <papertitle>HUMAC: Enabling Multi-Robot Collaboration from Single-Human Guidance
-                  </papertitle>
-                  <!-- </a> -->
-                  <br>
-                  Zhengran Ji,
-                  <strong>Lingyu Zhang</strong>,
-                  Paul Sajda, Boyuan Chen
-                  <br>
-                  <em>Preprint 2024</em>
-                  <br>
-                  <a href="https://arxiv.org/pdf/2409.19831">arxiv</a> /
-                  <a href="http://www.generalroboticslab.com/blogs/blog/2024-09-29-humac/index.html">project page</a> /
-                  <a href="https://www.youtube.com/watch?v=2X92LnFTutY">video</a>
-
-                  <br>
-                  <p></p>
-                  <p>
-                    Enables multi-robot collaboration from single-human guidance. Inspired by the human theory-of-mind,
-                    HUMAC leverages human-robot interface
-                    that allows a single human to guide multiple robots simultaneously, through which collaborative
-                    behavior can be learned.
-                  </p>
-                </td>
-              </tr>
 
               <tr onmouseout="equi_stop()" onmouseover="equi_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle;">
