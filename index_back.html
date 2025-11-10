@@ -12,10 +12,6 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/duke_logo.png">
 
-  <!-- Resource Hints -->
-  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.clustrmaps.com" crossorigin>
-
   <!-- Preload critical images for better performance -->
   <link rel="preload" as="image" href="images/profile2_masked.png">
   <link rel="preload" as="image" href="images/casual.jpg">
@@ -133,6 +129,15 @@
                   <heading>Publications</heading>
                 </td>
               </tr>
+              <!-- <tr>
+                <td class="section">
+                  <p style='font-size:medium;'>
+                    I am broadly interested in machine learning for decision making and perception. In particular,
+                    finding inspiration from humans for advancing real-world agents by improving the robustness and
+                    generalization of ML models.
+                  </p>
+                </td>
+              </tr> -->
             </tbody>
           </table>
 
@@ -144,9 +149,6 @@
               <!-- Papers will be inserted here by papers.js -->
             </tbody>
           </table>
-
-          <!-- Sentinel for progressive loading of publications -->
-          <div id="pubs-sentinel" aria-hidden="true" style="height: 1px;"></div>
 
           <!-- ==================== FOOTER ==================== -->
           <!-- <table class="container">
@@ -161,7 +163,7 @@
 
           <!-- Visitor Map -->
           <div style="text-align: center; margin-top: 20px;">
-            <script async defer type="text/javascript" id="clustrmaps"
+            <script type="text/javascript" id="clustrmaps"
               src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=Nw0XudLjXOYI0iR0_DdWEx5iLNbBbxok29dpBzq9KZg&co=ffffff&cmo=afafaf&cmn=ff5353&ct=808080">
               </script>
           </div>
@@ -180,95 +182,6 @@
     </ul>
   </nav>
 
-  <!-- Progressive render + lazy image enhancer for publications -->
-  <script defer>
-    (function () {
-      function tinyTransparentGif() {
-        return 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
-      }
-
-      function enhancePubs() {
-        const container = document.getElementById('papers-container');
-        if (!container) return;
-
-        const items = Array.from(container.children);
-        const INITIAL = 8;     // render first 8 items immediately
-        const CHUNK = 8;       // then add 8 at a time on scroll
-
-        // Mark all publication images as lazy. For items beyond INITIAL,
-        // defer their image requests by swapping src -> data-src.
-        items.forEach((row, idx) => {
-          const imgs = row.querySelectorAll('img');
-          imgs.forEach(img => {
-            // Prefer browser-native lazy loading
-            if (!img.hasAttribute('loading')) img.loading = 'lazy';
-            img.decoding = 'async';
-            // Lower fetch priority for below-the-fold
-            try { img.fetchPriority = idx < INITIAL ? 'auto' : 'low'; } catch (_) { }
-
-            if (idx >= INITIAL) {
-              if (!img.dataset.src && img.src) {
-                img.dataset.src = img.src;
-                img.src = tinyTransparentGif();
-              }
-            }
-          });
-        });
-
-        // If there aren't enough items, nothing else to do.
-        if (items.length <= INITIAL) return;
-
-        // Hide all rows beyond the initial batch.
-        for (let i = INITIAL; i < items.length; i++) {
-          items[i].style.display = 'none';
-        }
-
-        let next = INITIAL;
-        const sentinel = document.getElementById('pubs-sentinel');
-        if (!sentinel) return;
-
-        const revealNextChunk = () => {
-          const end = Math.min(next + CHUNK, items.length);
-          for (let i = next; i < end; i++) {
-            const row = items[i];
-            row.style.display = '';
-
-            // Restore deferred images now that the row is visible.
-            row.querySelectorAll('img').forEach(img => {
-              if (img.dataset.src && (!img.src || img.src === tinyTransparentGif())) {
-                img.src = img.dataset.src;
-              }
-            });
-          }
-          next = end;
-          if (next >= items.length) {
-            observer.disconnect();
-          }
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-          for (const e of entries) {
-            if (e.isIntersecting) {
-              if ('requestIdleCallback' in window) {
-                requestIdleCallback(revealNextChunk, { timeout: 200 });
-              } else {
-                setTimeout(revealNextChunk, 0);
-              }
-            }
-          }
-        }, { rootMargin: '400px 0px' });
-
-        observer.observe(sentinel);
-      }
-
-      if (document.readyState === 'complete' || document.readyState === 'interactive') {
-        // papers.js is defer-loaded in <head>, so it runs before this defer script.
-        enhancePubs();
-      } else {
-        document.addEventListener('DOMContentLoaded', enhancePubs);
-      }
-    })();
-  </script>
 </body>
 
 </html>
