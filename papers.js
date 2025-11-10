@@ -165,23 +165,35 @@ function createPaperHTML(paper) {
     <div class="one">
       <div class="two" id='${paper.id}_hover'>
         ${paper.videoType ? `
-        <video width="100%" height="100%" muted autoplay loop>
+        <video width="100%" height="100%" muted loop preload="none">
           <source src="${paper.hoverImage}" type="video/mp4">
         </video>
         ` : `
-        <img src='${paper.hoverImage}' width="160" alt="${paper.title}">
+        <img src='${paper.hoverImage}' width="160" alt="${paper.title}" loading="lazy">
         `}
       </div>
-      <img src='${paper.image}' width="160" alt="${paper.title}">
+      <img src='${paper.image}' width="160" alt="${paper.title}" loading="lazy">
     </div>
   ` : `
-    <img src='${paper.image}' width="160" alt="${paper.title}">
+    <img src='${paper.image}' width="160" alt="${paper.title}" loading="lazy">
   `;
 
     const scriptHTML = hasHover ? `
     <script type="text/javascript">
-      function ${paper.id}_start() { document.getElementById('${paper.id}_hover').style.opacity = "1"; }
-      function ${paper.id}_stop() { document.getElementById('${paper.id}_hover').style.opacity = "0"; }
+      function ${paper.id}_start() { 
+        document.getElementById('${paper.id}_hover').style.opacity = "1";
+        ${paper.videoType ? `
+        var video = document.querySelector('#${paper.id}_hover video');
+        if (video) video.play();
+        ` : ''}
+      }
+      function ${paper.id}_stop() { 
+        document.getElementById('${paper.id}_hover').style.opacity = "0";
+        ${paper.videoType ? `
+        var video = document.querySelector('#${paper.id}_hover video');
+        if (video) video.pause();
+        ` : ''}
+      }
       ${paper.id}_stop();
     </script>
   ` : '';
