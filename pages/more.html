@@ -1,0 +1,518 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Lingyu Zhang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>More - Lingyu Zhang</title>
+
+    <!-- Stylesheets and Icons -->
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    <link rel="icon" type="image/png" href="../images/duke_logo.png">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE3R48N61V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TE3R48N61V');
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav a {
+            color: #c70809;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav a:hover {
+            opacity: 0.7;
+        }
+
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 550px;
+            gap: 60px;
+            align-items: start;
+            margin: 40px 0;
+        }
+
+        .text-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .text-content a {
+            color: #c70809;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .text-content a:hover {
+            border-bottom-color: #c70809;
+        }
+
+        /* Slideshow Styles */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: auto;
+            background: #f8f9fa;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .slide {
+            display: none;
+            position: relative;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+        }
+
+        .slide-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+            color: white;
+            padding: 30px 20px 15px;
+            font-size: 0.9rem;
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            user-select: none;
+            transition: background 0.3s ease;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover,
+        .next:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .dots-container {
+            text-align: center;
+            padding: 15px;
+            background: #f8f9fa;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 12px;
+            width: 12px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .dot.active,
+        .dot:hover {
+            background-color: #c70809;
+        }
+
+        /* Audio Player Styles */
+        .audio-section {
+            margin: 60px 0;
+            padding: 40px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .audio-section h2 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .audio-player {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .track-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .track-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .track-artist {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .custom-audio {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        audio {
+            width: 100%;
+            height: 50px;
+            outline: none;
+        }
+
+        audio::-webkit-media-controls-panel {
+            background-color: #fff;
+        }
+
+        .playlist {
+            margin-top: 30px;
+        }
+
+        .playlist h3 {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .track-list {
+            list-style: none;
+        }
+
+        .track-item {
+            padding: 12px;
+            margin: 5px 0;
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .track-item:hover {
+            background: #f0f0f0;
+        }
+
+        .track-item.playing {
+            background: #fff5f5;
+            border-color: #c70809;
+            color: #c70809;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .slide img {
+                height: 350px;
+            }
+        }
+
+        /* ==================== NAVIGATION BAR ==================== */
+
+        .bottom-nav {
+            margin-top: 60px;
+            padding: 20px 0;
+            border-top: 1px solid #e8e8e8;
+            background: transparent;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: #999;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .bottom-nav {
+                margin-top: 40px;
+                padding: 15px 0;
+            }
+
+            .nav-links {
+                gap: 20px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a href="../index.html">← Home</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>About Me</h1>
+        </section>
+
+        <div class="content">
+            <div class="text-content">
+                <b>Music</b>
+                <p> I am a rapper and hip-hop producer in my spare time. I have been a <a
+                        href="https://music.163.com/#/artist?id=12965216">NetEase artist</a> under the stage name
+                    Mikeyboi 迈克男孩 since 2017. I write lyrical rap and make beats (see below for selected tracks
+                    featuring collaborators). Representing Nanjing University Hip-Hop Association from 2017-2021 left me
+                    with some of the best memories of my college years.
+                </p>
+                <p> I also produced the background music for the <a
+                        href="https://www.youtube.com/watch?v=RINSo3uI0dI">intro video</a> to our Human-AI Teaming
+                    platform
+                    CREW.</p>
+                <b>Sports</b>
+                <p> I enjoy playing basketball (aspiring 3&D two-way guard) and soccer (aspiring playmaking midfielder).
+                    I am a "very fast breaststroke swimmer for an amateur" (with references).
+                </p>
+                <b>Other Interests</b>
+                <p> Sci-fi & Biopics. Movie soundtracks (surprisingly good focus music for work).
+                </p>
+                <b>Places lived in for >3 months</b>
+                <p> China: Nantong, Beijing, Nanjing; US: Athens OH, Indianapolis IN, Berkeley CA, NYC, Durham NC.
+                </p>
+            </div>
+
+            <div class="slideshow-container">
+                <div class="slide">
+                    <img src="fire/2018Dec.jpg" alt="December 2018">
+                    <div class="slide-caption">Performance @ NJU Department of Business - December
+                        2018
+                    </div>
+                </div>
+                <div class="slide active">
+                    <img src="fire/2019Jul.jpg" alt="July 2019">
+                    <div class="slide-caption">Freshmen Arts Gala - July 2019</div>
+                </div>
+                <div class="slide">
+                    <img src="fire/2017Dec.jpeg" alt="December 2017">
+                    <div class="slide-caption">Performance @ NJU Department of Humanities - December
+                        2017</div>
+                </div>
+                <div class="slide">
+                    <img src="fire/2018group.jpeg" alt="Hip Hop Assocation Group Photo">
+                    <div class="slide-caption">Hip Hop Association Annual Special Show - May 2018</div>
+                </div>
+                <div class="slide">
+                    <img src="fire/2018May.jpeg" alt="May 2018">
+                    <div class="slide-caption">Freshmen Arts Gala - May 2018</div>
+                </div>
+                <div class="slide">
+                    <img src="fire/2019April.jpg" alt="April 2019">
+                    <div class="slide-caption">Little Whale Music Fest - April 2019</div>
+                </div>
+                <div class="slide">
+                    <img src="fire/2019June.jpg" alt="June 2019">
+                    <div class="slide-caption">Hip Hop Association Annual Special Show - June 2019</div>
+                </div>
+
+
+                <button class="prev" onclick="changeSlide(-1)">❮</button>
+                <button class="next" onclick="changeSlide(1)">❯</button>
+
+                <div class="dots-container">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+
+        <section class="audio-section">
+            <h2>Selected Tracks</h2>
+            <div class="audio-player">
+                <div class="track-info">
+                    <div class="track-title" id="currentTrack">Select a track to play</div>
+                    <div class="track-artist">Mikeyboi</div>
+                </div>
+
+                <div class="custom-audio">
+                    <audio id="audioPlayer" controls>
+                        <p>Your browser doesn't support HTML5 audio.</p>
+                    </audio>
+                </div>
+
+                <div class="playlist">
+                    <h3>Playlist</h3>
+                    <ul class="track-list">
+                        <li class="track-item"
+                            onclick="playTrack('songs/CATALINA-v1.7.1.mp3', 'Catalina (Lil Witch, Lychee, Mikeyboi)')">
+                            🎵 Catalina (Lil Witch/Lychee/Mikeyboi)
+                        </li>
+                        <li class="track-item"
+                            onclick="playTrack('songs/RP3T_mix_clean_1.2.mp3', 'RP3T Freestyle (Lil Witch, Mikeyboi, Lychee)')">
+                            🎵 RP3T Freestyle (Lil Witch/Mikeyboi/Lychee)
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Slideshow functionality
+        let slideIndex = 1;
+
+        function changeSlide(n) {
+            showSlide(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlide(slideIndex = n);
+        }
+
+        function showSlide(n) {
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active");
+            }
+
+            slides[slideIndex - 1].classList.add("active");
+            dots[slideIndex - 1].classList.add("active");
+        }
+
+        // Auto-advance slideshow every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Audio player functionality
+        const audioPlayer = document.getElementById('audioPlayer');
+        const trackTitle = document.getElementById('currentTrack');
+
+        function playTrack(filename, title) {
+            // Remove playing class from all items
+            document.querySelectorAll('.track-item').forEach(item => {
+                item.classList.remove('playing');
+            });
+
+            // Add playing class to clicked item
+            event.target.classList.add('playing');
+
+            // Update player
+            audioPlayer.src = filename;
+            trackTitle.textContent = title;
+            audioPlayer.play().catch(e => {
+                console.log('Audio play failed:', e);
+                alert('Could not load audio file: ' + filename + '\n\nPlease make sure the MP3 file exists in your directory.');
+            });
+        }
+
+        // Remove playing class when audio ends
+        audioPlayer.addEventListener('ended', () => {
+            document.querySelectorAll('.track-item').forEach(item => {
+                item.classList.remove('playing');
+            });
+            trackTitle.textContent = 'Select a track to play';
+        });
+    </script>
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav class="bottom-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Past Projects</a></li>
+                <li><a href="more.html" class="nav-link">More</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+</html>

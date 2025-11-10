@@ -1,0 +1,420 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Lingyu Zhang">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Projects - Lingyu Zhang</title>
+
+    <!-- Stylesheets and Icons -->
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+    <link rel="icon" type="image/png" href="../images/duke_logo.png">
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE3R48N61V"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TE3R48N61V');
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav {
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav a {
+            color: #c70809;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav a:hover {
+            opacity: 0.7;
+        }
+
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            letter-spacing: -1px;
+        }
+
+        .content {
+            margin: 40px 0;
+            min-height: 400px;
+        }
+
+        .text-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .text-content a {
+            color: #c70809;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .text-content a:hover {
+            border-bottom-color: #c70809;
+        }
+
+        /* Project Styles */
+        .project-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .project-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 30px;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .project-item:hover {
+            background: #f5f5f5;
+        }
+
+        .project-image {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            object-fit: cover;
+        }
+
+        .project-details {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 5px;
+        }
+
+        .project-authors {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        .project-venue {
+            font-size: 0.9rem;
+            font-style: italic;
+            color: #666;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 5px;
+        }
+
+        .project-links a {
+            color: #c70809;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-links a:hover {
+            opacity: 0.7;
+        }
+
+        .project-description {
+            margin-top: 10px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .project-item {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .project-image {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+
+        /* ==================== NAVIGATION BAR ==================== */
+
+        .bottom-nav {
+            margin-top: 60px;
+            padding: 20px 0;
+            border-top: 1px solid #e8e8e8;
+            background: transparent;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            color: #999;
+            text-decoration: none;
+            font-size: 13px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .bottom-nav {
+                margin-top: 40px;
+                padding: 15px 0;
+            }
+
+            .nav-links {
+                gap: 20px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <a href="../index.html">← Home</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Past Projects</h1>
+        </section>
+
+        <div class="content">
+            <div class="project-list">
+
+                <!-- Noise as Masks -->
+                <div class="project-item">
+                    <img src="../images/old/noise_teaser.png" alt="Noise as Masks" class="project-image">
+                    <div class="project-details">
+                        <div class="project-title">Noise as Masks</div>
+                        <div class="project-authors">
+                            <strong>Lingyu Zhang</strong>
+                        </div>
+                        <div class="project-venue">Representation Learning Final Project, 2022</div>
+                        <div class="project-links">
+                            <a href="../data/Rep_Learn_Final.pdf">Paper</a>
+                        </div>
+                        <div class="project-description">
+                            We propose to use noise as masks for masked image modeling. While randomized patch masking
+                            has
+                            yielded decent results in self-supervised learning, it is not at all obvious that it is the
+                            optimal
+                            design. We show that theoretically inspired semantically-guided noise masks can be a
+                            potentially
+                            well-performing alternative.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entropy Constrained Information Bottleneck -->
+                <div class="project-item">
+                    <img src="../images/old/dceb_pic.png" alt="Entropy Constrained Information Bottleneck"
+                        class="project-image">
+                    <div class="project-details">
+                        <div class="project-title">Entropy Constrained Information Bottleneck</div>
+                        <div class="project-authors">
+                            <strong>Lingyu Zhang</strong>
+                        </div>
+                        <div class="project-venue">Sparse and Low-Dimensional Models for High-Dimensional Data Final
+                            Project, 2022</div>
+                        <div class="project-links">
+                            <a href="../data/ECIB_2211.pdf">Paper</a>
+                        </div>
+                        <div class="project-description">
+                            We propose to use deterministic encoding along with actual quantization
+                            on latents, rendering the IB problem a source compression. By doing so, finite non-trivial
+                            mutual information can be estimated.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Black-box Adversarial Attacks -->
+                <div class="project-item">
+                    <img src="../images/old/adv_dl_fig.png" alt="Black-box Adversarial Attacks" class="project-image">
+                    <div class="project-details">
+                        <div class="project-title">Black-box Adversarial Attacks with Style Information</div>
+                        <div class="project-authors">
+                            Christodoulos Constantinides, <strong>Lingyu Zhang</strong>
+                        </div>
+                        <div class="project-venue">E6691 Final Project, 2022</div>
+                        <div class="project-links">
+                            <a href="../data/adv_dl_proj.pdf">Paper</a>
+                        </div>
+                        <div class="project-description">
+                            We propose two types of blackbox attacks based on style transfer and
+                            investigate how robust classifiers behave against them.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spectral Clustering -->
+                <div class="project-item">
+                    <img src="../images/old/spec_fig.png" alt="Spectral Clustering" class="project-image">
+                    <div class="project-details">
+                        <div class="project-title">Unsupervised Harmonic Sound Source Separation with Spectral
+                            Clustering</div>
+                        <div class="project-authors">
+                            <strong>Lingyu Zhang</strong>, Yiming Lin, Lucy Wang, Zhaoyuan Deng
+                        </div>
+                        <div class="project-venue">Unsupervised Machine Learning Final Project, 2021</div>
+                        <div class="project-links">
+                            <a href="../data/CS4774_report_22.pdf">Paper</a>
+                        </div>
+                        <div class="project-description">
+                            We modeled mixed sources of audio signals by sinusoidal modeling with Short-Time Fourier
+                            Transforms. Based on selected spectral peaks of sinusoidal parameters, we constructed a
+                            similarity function between time and frequency components, and applied spectral clustering
+                            to globally partition the data.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deep Reinforcement Learning -->
+                <div class="project-item">
+                    <img src="../images/old/RL_pic.png" alt="Deep Reinforcement Learning" class="project-image">
+                    <div class="project-details">
+                        <div class="project-title">Exploring Diverse Ways To Improve An Agent On Active Object
+                            Localization With Deep Reinforcement Learning</div>
+                        <div class="project-authors">
+                            Jiawei Lu, <strong>Lingyu Zhang</strong>, Xinyi Liu, Yukai Song, Zixuan Yan
+                        </div>
+                        <div class="project-venue">E6885 Final Project, 2021</div>
+                        <div class="project-links">
+                            <a href="../data/E6885_report.pdf">Paper</a>
+                        </div>
+                        <div class="project-description">
+                            We proposed improvement to using DQNs for Object Detection from four aspects,
+                            including using advanced CNNs to generate state representation, defining more flexible
+                            action spaces, changing reward function to avoid undesired activity in agent
+                            and using mask instead cross for multiple objects.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Neural Image Compression -->
+                <div class="project-item">
+                    <img src="../images/old/thesis_fig.png" alt="Neural Image Compression" class="project-image">
+                    <div class="project-details">
+                        <div class="project-title">Design and Optimization of a Multi-scale Representation based Image
+                            Compression Network</div>
+                        <div class="project-authors">
+                            <strong>Lingyu Zhang</strong>
+                        </div>
+                        <div class="project-venue">Undergraduate Thesis, 2021</div>
+                        <div class="project-links">
+                            <a href="../data/thesis_compression.pdf">Thesis (Chinese)</a>
+                        </div>
+                        <div class="project-description">
+                            Learned image compression has surpassed the rate-distortion performance of hand-crafted
+                            traditional image codecs in recent years. However, they are not yet practical because of
+                            their significantly slower decoding speed than classical algorithms. We investigated the
+                            possibility of directly performing vision tasks in the latent space and found that using a
+                            multi-scale encoder helped preserve semantic meaning in latent codes while maintaining
+                            state-of-the-art compression rates.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Stereo Matching -->
+                <div class="project-item">
+                    <img src="../images/old/ddrsgm_fig.png" alt="Video Stereo Matching" class="project-image">
+                    <div class="project-details">
+                        <div class="project-title">Dynamic Disparity Range Semi-Global Matching for Video Stereo
+                            Matching</div>
+                        <div class="project-authors">
+                            <strong>Lingyu Zhang</strong>
+                        </div>
+                        <div class="project-venue">Computer Vision Final Project, 2020</div>
+                        <div class="project-links">
+                            <a href="../data/ddrsgm_slides.pdf">Slides</a>
+                            <a href="../data/ddrsgm_report.pdf">Report (Chinese)</a>
+                        </div>
+                        <div class="project-description">
+                            Implemented an accelerated stereo matching algorithm for video sequences, utilizing a
+                            dynamic disparity range search based on temporal correlation between frames, saving 21% of
+                            computational time with minimal accuracy loss. Designed a Divided Section cost function,
+                            preserving more
+                            information than Census cost, achieving 18% better matching accuracy while trading off
+                            computational complexity.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav class="bottom-nav">
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Past Projects</a></li>
+                <li><a href="more.html" class="nav-link">More</a></li>
+            </ul>
+        </div>
+    </nav>
+
+</body>
+
+</html>

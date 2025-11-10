@@ -2,826 +2,182 @@
 <html lang="en">
 
 <head>
-  <style>
-    a:link {
-      color: rgb(199, 8, 11);
-      background-color: transparent;
-      text-decoration: none;
-    }
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="author" content="Lingyu Zhang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    a:visited {
-      color: rgb(199, 8, 11);
-      background-color: transparent;
-      text-decoration: none;
-    }
+  <title>Lingyu Zhang</title>
 
-    a:active {
-      color: rgb(199, 8, 11)l;
-      background-color: transparent;
-    }
-  </style>
-  <!-- Google tag (gtag.js) -->
+  <!-- Stylesheets and Icons -->
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/duke_logo.png">
+
+  <!-- Papers Database - Add your papers in papers.js -->
+  <script src="papers.js"></script>
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE3R48N61V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-TE3R48N61V');
   </script>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Lingyu Zhang</title>
-
-  <!-- <div style="width:1000px;height:1000px;border:1px solid #000; z-index: -900">This is a rectangle!</div> -->
-  <meta name="author" content="Lingyu Zhang">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" type="image/png" href="images/duke_logo.png">
-  <!-- <link rel="icon"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22></text></svg>"> -->
 </head>
-<!-- <div class="v1"></div>
-<div class="v2"></div> -->
 
-
-<body style="background-color:white">
-  <!-- <li class="nav-item ">
-    <a class="nav-link" href="pages/Music.html">
-      Music
-    </a>
-  </li> -->
-  <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+<body>
+  <!-- ==================== MAIN CONTAINER ==================== -->
+  <table class="container">
     <tbody>
       <tr style="padding:10px">
         <td style="padding:0px">
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+
+          <!-- ==================== PROFILE SECTION ==================== -->
+          <table class="container">
             <tbody>
               <tr style="padding:0px">
-                <td style="padding:7.5%;width:63%;vertical-align:middle">
-                  <!-- <div style="width:500px;height:100px;border:1px solid #000;">This is a rectangle!</div> -->
+                <!-- Profile Text -->
+                <td class="profile-content">
                   <p style="text-align:center;">
                     <name>Lingyu Zhang 张凌宇</name>
                   </p>
-                  <p style="text-align:center;color:grey;font: size -1px;">
-                    PhD Student</a> <br> <!--  <a href="https://www.ee.columbia.edu/">EE</a> -->
-                    Duke University <br>
-                    lingyu.zhang@duke.edu<br>
-                  <p style=' font-size:medium;'>
-                    I am a PhD student at the <a style='font-size:medium;' href="http://generalroboticslab.com/">General
-                      Robotics Lab</a> @ <a style='font-size:medium;' href="https://pratt.duke.edu/">Duke
-                      University</a>, advised by Prof. <a style='font-size:medium;' href="http://boyuanchen.com/">Boyuan
-                      Chen </a>.
-                    <br><br>
 
-                    Previously, I graduated from Columbia with an MS EE degree. At Columbia, I worked on robust
-                    computer vision models with Prof. <a style='font-size:medium;'
-                      href="http://www.cs.columbia.edu/~junfeng/">Junfeng
-                      Yang</a> and Prof. <a style='font-size:medium;' href="http://www.cs.columbia.edu/~vondrick/">Carl
-                      Vondrick</a>, and worked closely with PhD student <a style='font-size:medium;'
-                      href="http://www.cs.columbia.edu/~mcz/">Chengzhi
-                      Mao</a>. I was also a research assistant in Prof. <a style='font-size:medium;'
-                      href="https://www.ee.columbia.edu/~sfchang/">Shih-Fu Chang</a>'s DVMM lab</a>, where I worked on
-                    multimodal learning, under the supervision of Dr. Mingyang Zhou.
-                    <br><br>
-
-                    Prior to Columbia, I earned my Bachelor's degree at <a style='font-size:medium;'
-                      href='https://www.nju.edu.cn/'>Nanjing University</a>, China, where I did my
-                    undergraduate thesis on neural image compression, advised by Prof. Qiu Shen.
+                  <p style="text-align:center;color:grey;font-size:14px;">
+                    PhD Student<br>
+                    Duke University<br>
+                    &lt1stname.lstname&gt@duke.edu
                   </p>
-                  <p style="text-align:center">
-                    <a href="data/CV_Jan25.pdf">CV</a> &nbsp/&nbsp
+
+                  <p style='font-size:medium;'>
+                    I am a PhD student at the
+                    <a class='custom-link' href="http://generalroboticslab.com/">General Robotics Lab</a> @
+                    Duke University,
+                    advised by Prof. <a class='custom-link' href="http://boyuanchen.com/">Boyuan Chen</a>.
+                    I study machine learning for decision-making and perception. I'm especially interested
+                    in <i>grounding the noisy but informative natural signals in the world as scalable supervision, such
+                      as
+                      various forms of human feedback and priors embedded in foundation models.</i>
+                  </p>
+
+                  <p style='font-size:medium;'>
+                    Previously, I graduated from Columbia with an MS degree, where I worked on robust computer
+                    vision models and multimodal learning. I worked with Professor <a class='custom-link'
+                      href="http://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a>, <a class='custom-link'
+                      href="http://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a>, and <a class='custom-link'
+                      href="https://www.ee.columbia.edu/~sfchang/">Shih-Fu Chang</a> and collaborated closely with <a
+                      class='custom-link' href="http://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a> and Mingyang
+                    Zhou.
+
+                  </p>
+
+                  <p style='font-size:medium;'>
+                    Prior to Columbia, I earned my Bachelor's degree at
+                    <a class='custom-link' href='https://www.nju.edu.cn/'>Nanjing University</a>, China,
+                    where I did my undergraduate thesis on neural image compression, advised by Prof. Qiu Shen.
+                  </p>
+
+                  <!-- Profile Links -->
+                  <p class="profile-links">
+                    <a href="data/CV2511.pdf">CV</a> &nbsp/&nbsp
                     <a
                       href="https://scholar.google.com/citations?hl=en&user=9W2e5cgAAAAJ&view_op=list_works&sortby=pubdate">Scholar</a>
                     &nbsp/&nbsp
                     <a href="https://www.linkedin.com/in/lingyuz/">Linkedin</a> &nbsp/&nbsp
-                    <!--  <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp -->
-                    <!--  <a href="https://scholar.google.com/citations?hl=en&user=9W2e5cgAAAAJ">Google Scholar</a> 
-                    &nbsp/&nbsp -->
                     <a href="https://twitter.com/mkbzly">X</a> &nbsp/&nbsp
                     <a href="https://github.com/lingyu98">Github</a>
                   </p>
                 </td>
-                <td style="padding:2.5%;width:40%;max-width:40%">
-                  <!-- 
-                  <a href="images/profile_masked.png"><img style="width:100%;max-width:100%" alt="profile photo"
-                      src="images/profile2_masked.png" class="hoverZoomLink"></a> -->
-                  <img style="width:100%;max-width:100%" src='images/profile2_masked.png' onmouseover="
-                    this.src='images/profile_masked.png' ;" onmouseout="this.src='images/profile2_masked.png';" />
 
+                <!-- Profile Image -->
+                <td class="profile-image">
+                  <img src='images/profile2_masked.png' alt="Lingyu Zhang profile photo"
+                    onmouseover="this.src='images/casual.png';" onmouseout="this.src='images/profile2_masked.png';" />
                 </td>
               </tr>
             </tbody>
           </table>
 
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <!-- ==================== NEWS SECTION ==================== -->
+          <!-- <table class="container">
             <tbody>
               <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
+                <td class="section-heading">
                   <heading>News</heading>
-                  <p style='font-size:medium;'>
-                    [1/2025] Our paper on single human guiding multiple robots is accepted to ICRA 2025
-                  </p>
-                  <p style='font-size:medium;'>
-                    [11/2024] Our paper CREW is accepted to TMLR 11/2024
-                  </p>
-                  <p style='font-size:medium;'>
-                    [9/2024] Our paper GUIDE is accepted at Neurips 2024
-                  </p>
-                  <p style='font-size:medium;'>
-                    [8/2024] Our platform for Human-AI teaming CREW is released
-                  </p>
-                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="section">
+                  <div class="news-item">[1/2025] Our paper on single human guiding multiple robots is accepted to ICRA
+                    2025</div>
+                  <div class="news-item">[11/2024] Our paper CREW is accepted to TMLR 11/2024</div>
+                  <div class="news-item">[9/2024] Our paper GUIDE is accepted at Neurips 2024</div>
+                  <div class="news-item">[8/2024] Our platform for Human-AI teaming CREW is released</div>
                 </td>
               </tr>
             </tbody>
-          </table>
+          </table> -->
 
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <!-- ==================== RESEARCH SECTION ==================== -->
+          <table class="container">
             <tbody>
               <tr>
-                <td style="padding:20px;width:100%;vertical-align:middle">
-                  <heading>Research</heading>
+                <td class="section-heading">
+                  <heading>Publications</heading>
+                </td>
+              </tr>
+              <!-- <tr>
+                <td class="section">
                   <p style='font-size:medium;'>
                     I am broadly interested in machine learning for decision making and perception. In particular,
                     finding inspiration from humans for advancing real-world agents by improving the robustness and
                     generalization of ML models.
-                    <!-- Representative papers are <span class="highlight">highlighted</span> -->
                   </p>
                 </td>
-              </tr>
+              </tr> -->
             </tbody>
           </table>
 
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-
-
-              <tr onmouseout="humac_stop()" onmouseover="humac_start()">
-                <td style="padding:10px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='guide_pic'>
-                      <img src='images/HUMAC.jpg' width="160">
-                    </div>
-                    <img src='images/HUMAC.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:60%;vertical-align:top">
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
-                  <papertitle>Enabling Multi-Robot Collaboration from Single-Human Guidance
-                  </papertitle>
-                  <!-- </a> -->
-                  <br>
-                  <a href="https://jzr01.github.io/">Zhengran Ji</a>,
-                  <strong>Lingyu Zhang</strong>,
-                  <a href="https://liinc.bme.columbia.edu/people/paul-sajda">Paul Sajda</a>,
-                  <a href="http://boyuanchen.com/">Boyuan Chen</a>
-                  <br>
-                  <em>ICRA 2025</em>
-                  <br>
-                  <a href="https://arxiv.org/pdf/2409.19831">arxiv</a> /
-                  <a href="http://www.generalroboticslab.com/blogs/blog/2024-09-29-humac/index.html">project page</a> /
-                  <a href="https://www.youtube.com/watch?v=2X92LnFTutY">video</a>
-
-                  <br>
-                  <p></p>
-                  <p>
-                    Enables multi-robot collaboration from single-human guidance. Inspired by the human theory-of-mind,
-                    we leverage human-robot interface
-                    that allows a single human to guide multiple robots simultaneously, through which collaborative
-                    behavior can be learned.
-                  </p>
-                </td>
-              </tr>
-
-              <tr onmouseout="guide_stop()" onmouseover="guide_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='guide_pic'>
-                      <img src='images/GUIDE.jpg' width="160">
-                    </div>
-                    <img src='images/GUIDE.jpg' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:top">
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
-                  <papertitle>GUIDE: Real-Time Human-Shaped Agents
-                  </papertitle>
-                  <!-- </a> -->
-                  <br>
-                  <strong>Lingyu Zhang</strong>,
-                  <a href="https://jzr01.github.io/">Zhengran Ji</a>,
-                  <a href="https://nicholaswaytowich.com/">Nicholas R Waytowich</a>,
-                  <a href="http://boyuanchen.com/">Boyuan Chen</a>
-                  <br>
-                  <em>Neurips 2024</em>
-                  <br>
-                  <a href="https://openreview.net/pdf/4c5b77e64e14afd376d04a6edb956072c602816b.pdf">paper</a> /
-                  <a href="http://www.generalroboticslab.com/blogs/blog/2024-10-21-guide/">project page</a> /
-                  <a href="https://www.youtube.com/watch?v=sMlvE9wYxj0">video</a>
-
-                  <br>
-                  <p></p>
-                  <p>
-                    Real-time human-guided RL with dense continuous rewards and a learned feedback
-                    model to reduce human input and enable continual training. We also provide insights on what makes a
-                    good human trainer for agents.
-
-                  </p>
-                </td>
-              </tr>
-
-
-              <tr onmouseout="crew_stop()" onmouseover="crew_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='crew_pic'>
-                      <img src='images/crew-thumbnails.gif' width="160">
-                    </div>
-                    <img src='images/crew-thumbnails.gif' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:top">
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
-                  <papertitle>CREW: Facilitating Human-AI Teaming
-                  </papertitle>
-                  <!-- </a> -->
-                  <br>
-                  <strong>Lingyu Zhang</strong>,
-                  <a href="https://jzr01.github.io/">Zhengran Ji</a>,
-                  <a href="http://boyuanchen.com/">Boyuan Chen</a>
-                  <br>
-                  <em>TMLR 2024</em>
-                  <br>
-                  <a href="https://openreview.net/pdf?id=ZRXwHRXm8i">paper</a> /
-                  <a href="http://www.generalroboticslab.com/blogs/blog/2024-08-01-crew/index.html">project page</a> /
-                  <a href="https://www.youtube.com/watch?v=RINSo3uI0dI">video</a> /
-                  <a href="https://generalroboticslab.github.io/crew-docs/index.html">documentation</a>
-                  <br>
-                  <p></p>
-                  <p>
-                    We introduce a platform for Human-AI teaming research. CREW offers extensible environment design,
-                    enables real-time
-                    human-AI communication, supports hybrid Human-AI teaming, parallel sessions, multimodal feedback,
-                    and physiological data collection, and features ML community-friendly algorithm design.
-                  </p>
-                </td>
-              </tr>
-
-
-              <tr onmouseout="equi_stop()" onmouseover="equi_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='equi_pic'>
-                      <img src='images/equi_pic.png' width="160">
-                    </div>
-                    <img src='images/equi_pic.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:top">
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/"> -->
-                  <papertitle>Robust Perception through Equivariance
-                  </papertitle>
-                  <!-- </a> -->
-                  <br>
-                  <a href="https://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a>,
-                  <strong>Lingyu Zhang</strong>,
-                  Abhishek Vaibhav Joshi,
-                  <a href="https://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a>,
-                  <a href="http://www.wanghao.in/">Hao Wang</a>,
-                  <a href="https://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a>
-                  <br>
-                  <em>ICML 2023</em>
-                  <br>
-                  <a href="https://proceedings.mlr.press/v202/mao23d.html">paper</a> /
-                  <a href="https://equi4robust.cs.columbia.edu">project page</a>
-                  <br>
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                  <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                  <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
-                  <p></p>
-                  <p>
-                    We introduce a framework that uses the dense intrinsic constraints in natural images to robustify
-                    inference, allowing the model to adjust dynamically to each
-                    individual image's unique and potentially novel characteristics at inference time.
-                  </p>
-                </td>
-              </tr>
-
-
-              <tr onmouseout="robustvideo_stop()" onmouseover="robustvideo_start()" bgcolor='white'>
-                <td style="padding:20px;width:25%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='robust_video_vid'><video width=100% height=100% muted autoplay loop>
-                        <source src="images/robust_video_vid.m4v" type="video/mp4">
-                        Your browser does not support the video tag.
-                      </video></div>
-                    <img src='images/robustvideo.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function dreamfusion_start() {
-                      document.getElementById('dreamfusion_image').style.opacity = "1";
-                    }
-
-                    function dreamfusion_stop() {
-                      document.getElementById('dreamfusion_image').style.opacity = "0";
-                    }
-                    dreamfusion_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle">
-                  <!-- <a href="https://dreamfusion3d.github.io/"> -->
-                  <papertitle>Adversarially Robust Video Perception by Seeing Motion</papertitle>
-                  <!-- </a> -->
-                  <br>
-                  <strong>Lingyu Zhang*</strong>,
-                  <a href="https://www.cs.columbia.edu/~mcz/">Chengzhi Mao*</a>,
-                  <a href="https://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a>,
-                  <a href="https://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a>
-                  <br>
-                  <em>Preprint 2023</em>
-                  <br>
-                  <a href="https://arxiv.org/abs/2212.07815">arxiv</a> /
-                  <a href="https://motion4robust.cs.columbia.edu">project page</a>
-                  <br>
-                  <!-- <a href="https://dreamfusion3d.github.io/">project page</a>
-                  / -->
-                  <!-- <a href="https://arxiv.org/abs/2209.14988">arXiv</a>
-                  / -->
-                  <!-- <a href="https://dreamfusion3d.github.io/gallery.html">gallery</a> -->
-                  <p></p>
-                  <p>
-                    We find that adversarial attacks generated for fooling video classifiers also collaterally corrupt
-                    motion. We propose to defend against attacks at test time by restoring disrupted motion.
-
-                  </p>
-                </td>
-              </tr>
-
-              <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='equi_pic'>
-                      <img src='images/stereo_pic.png' width="160">
-                    </div>
-                    <img src='images/stereo_pic.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:top">
-                  <!-- <a> -->
-                  <!-- href="https://link.springer.com/chapter/10.1007/978-3-030-87361-5_3" -->
-                  <papertitle>A Stereo Matching Method for Three-Dimensional Eye Localization of Autostereoscopic
-                    Display
-                  </papertitle>
-                  <!-- </a> -->
-                  <br>
-                  Bangpeng Xiao,
-                  Shenyuan Ye,
-                  Xicai Li,
-                  Min Li,
-                  <strong>Lingyu Zhang, </strong>
-                  Yuanqing Wang
-                  <br>
-                  <em>International Conference on Image and Graphics</em>, 2021
-                  <br>
-                  <a href="https://link.springer.com/chapter/10.1007/978-3-030-87361-5_3">paper</a>
-                  <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                  <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                  <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
-                  <p></p>
-                  <p>
-                    We improve and optimize the ZNCC stereo matching algorithm for three-dimensional eye localization.
-                    We improve operation logic of the matching and optimize the scanning strategy based on the
-                    application scenarios.
-                    algorithm
-                  </p>
-                </td>
-              </tr>
-
+          <!-- ==================== PUBLICATIONS ==================== -->
+          <!-- Papers are automatically loaded from papers.js -->
+          <!-- To add a new paper, edit papers.js - see HOW_TO_ADD_PAPERS.md -->
+          <table class="container">
+            <tbody id="papers-container">
+              <!-- Papers will be inserted here by papers.js -->
+            </tbody>
           </table>
 
-
-
-
-
-
-          <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <!-- ==================== FOOTER ==================== -->
+          <!-- <table class="container">
             <tbody>
               <tr>
-                <td>
-                  <heading>Selected Projects</heading>
+                <td class="footer">
+                  <p>Webpage template from <a href="https://jonbarron.info/">Jon Barron</a></p>
                 </td>
               </tr>
             </tbody>
           </table> -->
-          <!-- <table width="100%" align="center" border="0" cellpadding="20"> -->
-          <!-- <tbody> -->
-          <!-- <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='equi_pic'>
-                      <img src='images/noise_teaser.png' width="160">
-                    </div> -->
-          <!-- <img src='images/dceb_pic.png' width="160"> -->
-          <!-- </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
 
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:top"> -->
-          <!-- <a href="data/ECIB_2211.pdf"> -->
-          <!-- <papertitle>Noise as Masks
-                  </papertitle> -->
-          <!-- </a> -->
-          <!-- <br>
-                  <strong>Lingyu Zhang </strong>
-                  <br>
-                  <em>Representation Learning Final Project</em>, 2022
-                  <br>
-                  <a href="data/Rep_Learn_Final.pdf">paper</a> -->
-          <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
-          <!-- <p></p>
-                  <p>
-                    We propose to use noise as masks for masked image modeling. While randomized patch masking has
-                    yielded decent results in self-supervised learning, it is not at all obvious that it is the optimal
-                    design. We show that
-                    theoretically inspired semantically-guided noise masks can be a potentially well-performing
-                    alternative.
-                  </p>
-                </td>
-              </tr> -->
-          <!-- 
-              <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='equi_pic'>
-                      <img src='images/dceb_pic.png' width="160">
-                    </div> -->
-          <!-- <img src='images/dceb_pic.png' width="160"> -->
-          <!-- </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
+          <!-- Visitor Map -->
+          <div style="text-align: center; margin-top: 20px;">
+            <script type="text/javascript" id="clustrmaps"
+              src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=Nw0XudLjXOYI0iR0_DdWEx5iLNbBbxok29dpBzq9KZg&co=ffffff&cmo=afafaf&cmn=ff5353&ct=808080">
+              </script>
+          </div>
 
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:top"> -->
-          <!-- <a href="data/ECIB_2211.pdf"> -->
-          <!-- <papertitle>Entropy Constrained Information Bottleneck
-                  </papertitle> -->
-          <!-- </a> -->
-          <!-- <br>
-                  <strong>Lingyu Zhang </strong>
-                  <br>
-                  <em>Sparse and Low-Dimensional Models for High-Dimensional Data Final Project</em>, 2022
-                  <br>
-                  <a href="data/ECIB_2211.pdf">paper</a> -->
-          <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
-          <!-- <p></p>
-                  <p>
-                    We propose to use deterministic encoding along with actual quantization
-                    on latents, rendering the IB problem a source compression. By doing so, finite non-trivial
-                    mutual
-                    information can be estimated.
-                  </p>
-                </td>
-              </tr> -->
-
-          <!-- 
-              <tr onmouseout="samurai_start()" onmouseover="samurai_stop()">
-                <td style="padding:20px;width:25%;vertical-align:middle; ">
-                  <div class="one">
-                    <div class="two" id='equi_pic'>
-                      <img src='images/adv_dl_fig.png' width="160">
-                    </div> -->
-          <!-- <img src='images/adv_dl_fig.png' width="160"> -->
-          <!-- </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:top;"> -->
-          <!-- <a href="data/adv_dl_proj.pdf"> -->
-          <!-- <papertitle>Black-box Adversarial Attacks with Style Information
-                  </papertitle> -->
-          <!-- </a> -->
-          <!-- <br>
-                  Christodoulos Constantinides,
-                  <strong>Lingyu Zhang </strong>
-                  <br>
-                  <em>E6691 Final Project</em>, 2022
-                  <br>
-                  <a href="data/adv_dl_proj.pdf">paper</a> -->
-          <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
-          <!-- <p></p>
-                  <p>
-                    We propose two types of blackbox attacks based on style transfer and
-                    investigate how robust classifiers behave against them.
-                  </p>
-                </td>
-              </tr> -->
-
-
-          <!-- <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='equi_pic'>
-                      <img src='images/spec_fig.png' width="160">
-                    </div>
-                    <img src='images/spec_fig.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle"> -->
-          <!-- <a href="data/CS4774_report_22.pdf"> -->
-          <!-- <papertitle>Unsupervised Harmonic Sound Source Separation with Spectral Clustering
-                  </papertitle> -->
-          <!-- </a> -->
-          <!-- <br>
-                  <strong>Lingyu Zhang, </strong>
-                  Yiming Lin,
-                  Lucy Wang,
-                  Zhaoyuan Deng
-                  <br>
-                  <em>Unsupervised Machine Learning Final Project</em>, 2021
-                  <br>
-                  <a href="data/CS4774_report_22.pdf">paper</a> -->
-          <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
-          <!-- <p></p>
-                  <p>
-                    We modeled mixed sources of audio signals by sinusoidal modeling with Short-Time Fourier
-                    Transforms. Based on selected spectral peaks of sinusoidal parameters, we constructed a
-                    similarity function between time and frequency components, and applied spectral clustering
-                    to
-                    globally partition the data.
-                  </p>
-                </td>
-              </tr> -->
-
-
-
-          <!-- <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='equi_pic'>
-                      <img src='images/RL_pic.png' width="160">
-                    </div>
-                    <img src='images/RL_pic.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle"> -->
-          <!-- <a href="data/E6885_report.pdf"> -->
-          <!-- <papertitle>Exploring Diverse Ways To Improve An Agent On
-                    Active Object Localization With Deep Reinforcement Learning
-                  </papertitle> -->
-          <!-- </a> -->
-          <!-- <br>
-                  Jiawei Lu,
-                  <strong>Lingyu Zhang, </strong>
-                  Xinyi Liu,
-                  Yukai Song,
-                  Zixuan Yan
-                  <br> -->
-
-          <!-- <em>E6885 Final Project</em>, 2021
-                  <br>
-                  <a href="data/E6885_report.pdf">paper</a> -->
-          <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
-          <!-- <p></p>
-                  <p>
-                    We proposed improvement to using DQNs for Object Detection from four aspects,
-                    including using advanced CNNs to generate state representation, defining more flexible
-                    action spaces, changing reward function to avoid undesired activity in agent
-                    and using mask instead cross for multiple objects.
-                  </p>
-                </td>
-              </tr> -->
-
-          <!-- 
-              <tr onmouseout="samurai_start()" onmouseover="samurai_stop()">
-                <td style="padding:20px;width:25%;vertical-align:middle; ">
-                  <div class="one">
-                    <div class="two" id='equi_pic'>
-                      <img src='images/thesis_fig.png' width="160">
-                    </div> -->
-          <!-- <img src='images/adv_dl_fig.png' width="160"> -->
-          <!-- </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:top;"> -->
-          <!-- <a href="data/thesis_compression.pdf"> -->
-          <!-- <papertitle>Design and Optimization of a Multi-scale Representation based Image Compression
-                    Network
-                  </papertitle> -->
-          <!-- </a> -->
-          <!-- <br>
-                  <strong>Lingyu Zhang </strong>
-                  <br>
-                  <em>Undergraduate Thesis</em>, 2021
-                  <br>
-                  <a href="data/thesis_compression.pdf">thesis (Chinese)</a> -->
-
-          <!-- <a href="https://markboss.me/publication/2022-samurai/">project page</a> /
-                      <a href="https://www.youtube.com/watch?v=LlYuGDjXp-8">video</a> /
-                      <a href="https://arxiv.org/abs/2205.15768">arXiv</a> -->
-          <!-- <p></p>
-                  <p>
-                    Learned image compression has surpassed the rate-distortion performance of hand-crafted
-                    traditional image codecs in recent years. However, they are not yet practical because of
-                    their
-                    significantly slower decoding speed than classical algorithms. We investigated the
-                    possibility
-                    of directly performing vision tasks in the latent space and found that using a
-                    multi-scale encoder helped preserve semantic meaning in latent codes while maintaining
-                    state-of-the-art compression rates
-                  </p>
-                </td>
-              </tr> -->
-
-
-          <!-- <tr onmouseout="stereo_stop()" onmouseover="stereo_start()">
-                <td style="padding:20px;width:25%;vertical-align:middle;">
-                  <div class="one">
-                    <div class="two" id='equi_pic'>
-                      <img src='images/ddrsgm_fig.png' width="160">
-                    </div>
-                    <img src='images/ddrsgm_fig.png' width="160">
-                  </div>
-                  <script type="text/javascript">
-                    function samurai_start() {
-                      document.getElementById('samurai_image').style.opacity = "1";
-                    }
-
-                    function samurai_stop() {
-                      document.getElementById('samurai_image').style.opacity = "0";
-                    }
-                    samurai_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:75%;vertical-align:middle"> -->
-          <!-- <a href="data/ddrsgm_report.pdf"> -->
-          <!-- <papertitle>
-                    Dynamic Disparity Range Semi-Global Matching for Video Stereo Matching
-                  </papertitle> -->
-          <!-- </a> -->
-          <!-- <br>
-                  <strong>Lingyu Zhang, </strong>
-                  <br>
-
-                  <em>Computer Vision Final Project</em>, 2020
-                  <br>
-                  <a href="data/ddrsgm_slides.pdf">slides</a> /
-                  <a href="data/ddrsgm_report.pdf">report (Chinese)</a>
-                  <p></p>
-                  <p>
-                    Implemented an accelerated stereo matching algorithm for video sequences, utilizing a
-                    dynamic
-                    disparity range search based on temporal correlation between frames, saving 21% of
-                    computational
-                    time with minimal accuracy loss. Designed a Divided Section cost function, preserving more
-                    information than Census cost, achieving 18% better matching accuracy while trading off
-                    computational complexity.
-                  </p>
-                </td>
-              </tr> -->
-
-
-          <!-- </tbody>
-          </table> -->
-
-          <table
-            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-            <tbody>
-              <tr>
-                <td style="padding:0px">
-                  <br>
-                  <p style="text-align:right;font-size:small;">
-                    Webpage template from <a href="https://jonbarron.info/">Jon Barron</a>
-                  </p>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <script type="text/javascript" id="clustrmaps"
-            src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=Nw0XudLjXOYI0iR0_DdWEx5iLNbBbxok29dpBzq9KZg&co=ffffff&cmo=afafaf&cmn=ff5353&ct=808080">
-            </script>
         </td>
       </tr>
+    </tbody>
   </table>
+
+  <!-- ==================== NAVIGATION BAR ==================== -->
+  <nav class="right-nav">
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="pages/projects.html" class="nav-link">Past Projects</a></li>
+      <li><a href="pages/more.html" class="nav-link">More</a></li>
+    </ul>
+  </nav>
+
 </body>
 
 </html>
