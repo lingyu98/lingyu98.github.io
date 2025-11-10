@@ -395,47 +395,176 @@ span.highlight {
 
 @media (max-width: 768px) {
 
+  /* Adjust body padding for mobile */
+  body {
+    padding: 10px 0;
+  }
+
+  /* Container adjustments */
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Profile section - stack vertically */
   .profile-content,
   .profile-image {
     display: block;
-    width: 100%;
-    max-width: 100%;
-    padding: 20px;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px !important;
+    box-sizing: border-box;
+  }
+
+  .profile-image {
+    padding-top: 20px !important;
+    text-align: center;
+  }
+
+  .profile-image img {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .profile-content::before {
+    display: none;
+  }
+
+  /* Paper/project rows - stack vertically */
+  .paper-row {
+    display: block;
+    padding: 15px;
   }
 
   .paper-image,
   .paper-content {
     display: block;
-    width: 100%;
-    padding: 15px;
+    width: 100% !important;
+    padding: 10px !important;
+    text-align: center;
   }
 
+  .paper-image {
+    margin-bottom: 15px;
+  }
+
+  .paper-content {
+    text-align: left;
+  }
+
+  /* Typography adjustments */
   name {
-    font-size: 28px;
+    font-size: 26px;
   }
 
   heading {
     font-size: 20px;
   }
 
-  /* Mobile navigation */
+  papertitle {
+    font-size: 14px;
+  }
+
+  body,
+  td,
+  th,
+  tr,
+  p,
+  a {
+    font-size: 13px;
+  }
+
+  /* Section adjustments */
+  .section {
+    padding: 15px;
+  }
+
+  .section-heading {
+    padding: 15px;
+    border-left: 3px solid rgb(199, 8, 11);
+  }
+
+  /* Navigation adjustments */
   .right-nav {
-    position: fixed;
-    right: 10px;
-    left: auto;
-    top: 10px;
-    transform: none;
-    padding: 10px;
+    margin: 40px auto 20px auto;
+    padding: 12px 15px;
   }
 
   .nav-links {
     flex-direction: row;
-    gap: 8px;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  /* Links - make them easier to tap */
+  .paper-links a {
+    display: inline-block;
+    margin: 5px 8px 5px 0;
+    padding: 3px 0;
+  }
+
+  .profile-links a {
+    display: inline-block;
+    margin: 8px 8px;
+    padding: 5px 0;
+  }
+
+  /* Image hover effects */
+  .one,
+  .two {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* Visitor map */
+  #clustrmaps {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Better spacing for mobile */
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+/* Smaller mobile devices */
+@media (max-width: 480px) {
+  
+  name {
+    font-size: 22px;
+  }
+
+  heading {
+    font-size: 18px;
+  }
+
+  .profile-image img {
+    max-width: 200px;
+  }
+
+  .nav-links {
+    gap: 10px;
   }
 
   .nav-link {
     padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .paper-links a {
     font-size: 12px;
+  }
+
+  .one,
+  .two {
+    width: 120px;
+    height: 120px;
   }
 }
 

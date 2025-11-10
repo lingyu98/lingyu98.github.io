@@ -265,17 +265,134 @@
         }
 
         @media (max-width: 768px) {
-            .content {
-                grid-template-columns: 1fr;
-                gap: 40px;
+            /* Container and padding adjustments */
+            .container {
+                padding: 0 15px;
+            }
+
+            /* Navigation bar */
+            .nav {
+                padding: 15px 0;
+            }
+
+            /* Hero section */
+            .hero {
+                padding: 40px 0;
             }
 
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
+            }
+
+            /* Content grid - stack vertically */
+            .content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                margin: 20px 0;
+            }
+
+            .text-content {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+
+            .text-content b {
+                font-size: 1rem;
+            }
+
+            /* Slideshow adjustments */
+            .slideshow-container {
+                max-width: 100%;
             }
 
             .slide img {
-                height: 350px;
+                height: auto;
+                max-height: 300px;
+                width: 100%;
+                object-fit: contain;
+            }
+
+            .slide-caption {
+                font-size: 0.85rem;
+                padding: 8px;
+            }
+
+            .prev, .next {
+                padding: 8px 12px;
+                font-size: 16px;
+            }
+
+            .dots-container {
+                margin-top: 12px;
+            }
+
+            .dot {
+                width: 8px;
+                height: 8px;
+                margin: 0 4px;
+            }
+
+            /* Audio player adjustments */
+            .audio-player {
+                padding: 15px;
+            }
+
+            .audio-player h3 {
+                font-size: 1rem;
+                margin-bottom: 12px;
+            }
+
+            #currentTrack {
+                font-size: 0.9rem;
+            }
+
+            #audioPlayer {
+                margin: 12px 0;
+            }
+
+            .track-list {
+                gap: 8px;
+            }
+
+            .track-item {
+                padding: 10px;
+                font-size: 0.85rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .content {
+                gap: 20px;
+            }
+
+            .text-content {
+                font-size: 0.95rem;
+            }
+
+            .slide img {
+                max-height: 250px;
+            }
+
+            .slide-caption {
+                font-size: 0.8rem;
+            }
+
+            .prev, .next {
+                padding: 6px 10px;
+                font-size: 14px;
+            }
+
+            .audio-player {
+                padding: 12px;
+            }
+
+            .track-item {
+                padding: 8px;
+                font-size: 0.8rem;
             }
         }
 
