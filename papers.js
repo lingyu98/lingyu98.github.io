@@ -159,7 +159,7 @@ function createPaperHTML(paper) {
 
     const linksHTML = paper.links.map(link =>
         `<a href="${link.url}">${link.type}</a>`
-    ).join(' /\n                    ');
+    ).join('\n                    ');
 
     const imageHTML = hasHover ? `
     <div class="one">
@@ -210,10 +210,8 @@ function createPaperHTML(paper) {
                 </td>
                 <td class="paper-content">
                   <papertitle>${paper.title}</papertitle>
-                  <br>
-                  ${authorHTML}
-                  <br>
-                  <em>${paper.venue}</em>
+                  <div class="paper-authors">${authorHTML}</div>
+                  <div class="paper-venue">${paper.venue}</div>
                   <div class="paper-links">
                     ${linksHTML}
                   </div>
