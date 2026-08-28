@@ -1,5 +1,22 @@
 const papers = [
     {
+        id: "rtnav",
+        title: "RTNav: Towards Real-Time Zero-Shot Object Navigation",
+        authors: [
+            { name: "Lingyu Zhang*", highlight: true },
+            { name: "Easop Lee*", url: "https://easoplee.github.io" },
+            { name: "Boyuan Chen", url: "http://boyuanchen.com/" }
+        ],
+        venue: "Preprint 2026",
+        image: "images/rtnav_D1.gif",
+        links: [
+            { type: "arxiv", url: "https://arxiv.org/abs/2608.26496" },
+            { type: "project page", url: "https://generalroboticslab.com/RTNav" },
+            // { type: "video", url: "https://www.youtube.com" }
+        ],
+        description: "We find that recent foundation model-driven agents see significant performnace drop when evaluated under wall-clock time budgets instead of simulator step budgets. This is a result of optimizing for synchronous simulators, where the environment step waits for agent action, making inference time effectively free. We desgined RTNav, a modular asynchronous architecture where perception, mapping, planning and navigation runs at their own frequencies, achieving more time-efficient navigation."
+    },
+    {
         id: "ideationeval",
         title: "Scientific Judgment Drifts Over Time in AI Ideation",
         authors: [
@@ -14,7 +31,7 @@ const papers = [
             { type: "project page", url: "http://www.generalroboticslab.com/IdeationEval" },
             { type: "video", url: "https://www.youtube.com/watch?v=kiF7zdo6I8s" }
         ],
-        description: "Research ideation systems driven by AI often assume human evaluation is a fixed gold standard. We challenge this assumption. In a two-wave study with 7,182 ratings from 57 researchers across six departments, we find that scientists’ ratings of the same idea systematically drift over time. We discuss the implications and potential solutions for reliable evaluation of scientific ideas."
+        description: "Research ideation systems driven by AI often assume human evaluation is a fixed gold standard. We challenge this assumption. In a two-wave study with 7,938 ratings from 63 researchers across six departments, we find that scientists’ ratings of the same idea are inconsistent when measured at different times. We discuss the implications and potential solutions for reliable evaluation of scientific ideas."
     },
     {
         id: "humac",

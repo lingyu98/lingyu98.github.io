@@ -397,9 +397,9 @@ body > table.container > tbody > tr > td {
   border: 1px solid var(--line);
   border-radius: 5px;
   display: block;
-  height: 82px;
+  height: 154px;
   object-fit: contain;
-  width: 128px;
+  width: 154px;
 }
 
 .paper-content {
@@ -452,32 +452,27 @@ body > table.container > tbody > tr > td {
 
 .paper-description {
   color: var(--muted);
-  display: -webkit-box;
   font-size: 13px;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  -webkit-box-orient: vertical;
   line-height: 1.48;
   margin: 7px 0 0;
-  overflow: hidden;
 }
 
 /* ==================== IMAGE HOVER EFFECTS ==================== */
 
 .one {
-  height: 82px;
+  height: 154px;
   position: relative;
-  width: 128px;
+  width: 154px;
 }
 
 .two {
-  height: 82px;
+  height: 154px;
   left: 0;
   opacity: 0;
   position: absolute;
   top: 0;
   transition: opacity 0.2s ease-in-out;
-  width: 128px;
+  width: 154px;
   z-index: 1;
 }
 
@@ -584,8 +579,10 @@ span.highlight {
   }
 
   .paper-image img,
-  .paper-image video {
-    aspect-ratio: 16 / 10;
+  .paper-image video,
+  .one,
+  .two {
+    aspect-ratio: 1 / 1;
   }
 }
 
