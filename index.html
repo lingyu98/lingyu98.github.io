@@ -1,29 +1,15 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
   <meta name="author" content="Lingyu Zhang">
+  <meta name="description" content="Lingyu Zhang is a PhD student at Duke University studying Embodied AI.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>Lingyu Zhang</title>
-
-  <!-- Stylesheets and Icons -->
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet.css">
   <link rel="icon" type="image/png" href="images/duke_logo.png">
-
-  <!-- Resource Hints -->
-  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.clustrmaps.com" crossorigin>
-
-  <!-- Preload critical images for better performance -->
-  <link rel="preload" as="image" href="images/profile2_masked.png">
-  <link rel="preload" as="image" href="images/casual.jpg">
-
-  <!-- Papers Database - Add your papers in papers.js -->
   <script defer src="papers.js"></script>
-
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TE3R48N61V"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -34,243 +20,48 @@
 </head>
 
 <body>
-  <!-- ==================== MAIN CONTAINER ==================== -->
-  <table class="container">
-    <tbody>
-      <tr style="padding:10px">
-        <td style="padding:0px">
+  <main>
+    <header class="profile">
+      <div>
+        <h1>Lingyu Zhang</h1>
+        <!-- <p class="profile-meta">PhD student · Duke University</p> -->
+      </div>
+      <img class="portrait" src="images/profile2_masked.png" alt="Lingyu Zhang" width="64" height="64">
+    </header>
 
-          <!-- ==================== PROFILE SECTION ==================== -->
-          <table class="container">
-            <tbody>
-              <tr style="padding:0px">
-                <!-- Profile Text -->
-                <td class="profile-content">
-                  <h1 class="profile-name">Lingyu Zhang</h1>
+    <div class="intro">
+      <p>I am a PhD student at the <a href="http://generalroboticslab.com/">General Robotics Lab</a>
+        at Duke University, advised by Prof. <a href="http://boyuanchen.com/">Boyuan Chen</a>. My research is in
+        <b>Embodied AI</b>, often on grounding various forms of natural signals in the world as supervision,
+        such as <b>foundation model</b> priors and <b>human</b> guidance.
+      </p>
+      <p class="contact">You can reach me at <span class="email">&lt;1stname.lstname&gt;@duke.edu</span>.</p>
+      <nav class="profile-links" aria-label="Profile links">
+        <a href="data/CV2610_LingyuZhang.pdf">CV</a>
+        <a href="https://scholar.google.com/citations?hl=en&user=9W2e5cgAAAAJ&view_op=list_works&sortby=pubdate">Google
+          Scholar</a>
+        <a href="https://www.linkedin.com/in/lingyuz/">LinkedIn</a>
+      </nav>
+    </div>
 
-                  <p class="profile-meta">
-                    PhD Student<br>
-                    Duke University<br>
-                    &lt1stname.lstname&gt@duke.edu
-                  </p>
+    <section class="publications" aria-labelledby="publications-heading">
+      <h2 id="publications-heading">Selected Publications</h2>
+      <!-- Edit papers.js to add or update publications. -->
+      <div id="papers-container"></div>
+      <noscript>
+        <p>View my publications on <a href="https://scholar.google.com/citations?user=9W2e5cgAAAAJ">Google Scholar</a>.
+        </p>
+      </noscript>
+    </section>
 
-                  <p class="bio">
-                    I am a PhD student at the
-                    <a class='custom-link' href="http://generalroboticslab.com/">General Robotics Lab</a> @
-                    Duke University,
-                    advised by Prof. <a class='custom-link' href="http://boyuanchen.com/">Boyuan Chen</a>.
-                    I study machine learning for decision-making and discovery. I'm especially interested
-                    in grounding various forms of natural signals in the world as supervision to embodied agents, such
-                    as human feedback and foundation models priors.
-                  </p>
-
-                  <!-- <p class="bio">
-                    Previously, I graduated from Columbia with an MS degree, where I worked on robust computer
-                    vision models and multimodal learning. I worked with Professor <a class='custom-link'
-                      href="http://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a>, <a class='custom-link'
-                      href="http://www.cs.columbia.edu/~vondrick/">Carl Vondrick</a>, and <a class='custom-link'
-                      href="https://www.ee.columbia.edu/~sfchang/">Shih-Fu Chang</a> and collaborated closely with <a
-                      class='custom-link' href="http://www.cs.columbia.edu/~mcz/">Chengzhi Mao</a> and Mingyang
-                    Zhou.
-
-                  </p>
-
-                  <p class="bio">
-                    Prior to Columbia, I earned my Bachelor's degree at
-                    <a class='custom-link' href='https://www.nju.edu.cn/'>Nanjing University</a>, China,
-                    where I did my undergraduate thesis on neural image compression, advised by Prof. Qiu Shen.
-                  </p> -->
-
-                  <!-- <p class="student-note">
-                    If you are a Duke master’s or undergraduate student interested in working on <b>robot learning from
-                      human feedback</b> or <b></b>, feel free to reach out.
-                  </p> -->
-
-                  <!-- Profile Links -->
-                  <p class="profile-links">
-                    <a href="data/CV2608_Lingyu.pdf">CV</a>
-                    <a
-                      href="https://scholar.google.com/citations?hl=en&user=9W2e5cgAAAAJ&view_op=list_works&sortby=pubdate">Google
-                      Scholar</a>
-                    <a href="https://www.linkedin.com/in/lingyuz/">Linkedin</a>
-                    <!-- <a href="https://twitter.com/mkbzly">X</a> -->
-                    <!-- <a href="https://github.com/lingyu98">Github</a> -->
-                  </p>
-                </td>
-
-                <!-- Profile Image -->
-                <td class="profile-image">
-                  <img src='images/profile2_masked.png' alt="Lingyu Zhang profile photo"
-                    onmouseover="this.src='images/casual.jpg';" onmouseout="this.src='images/profile2_masked.png';" />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- ==================== NEWS SECTION ==================== -->
-          <!-- <table class="container">
-            <tbody>
-              <tr>
-                <td class="section-heading">
-                  <heading>News</heading>
-                </td>
-              </tr>
-              <tr>
-                <td class="section">
-                  <div class="news-item">[1/2025] Our paper on single human guiding multiple robots is accepted to ICRA
-                    2025</div>
-                  <div class="news-item">[11/2024] Our paper CREW is accepted to TMLR 11/2024</div>
-                  <div class="news-item">[9/2024] Our paper GUIDE is accepted at Neurips 2024</div>
-                  <div class="news-item">[8/2024] Our platform for Human-AI teaming CREW is released</div>
-                </td>
-              </tr>
-            </tbody>
-          </table> -->
-
-          <!-- ==================== RESEARCH SECTION ==================== -->
-          <table class="container">
-            <tbody>
-              <tr>
-                <td class="section-heading">
-                  <heading>Publications</heading>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-
-          <!-- ==================== PUBLICATIONS ==================== -->
-          <!-- Papers are automatically loaded from papers.js -->
-          <!-- To add a new paper, edit papers.js - see HOW_TO_ADD_PAPERS.md -->
-          <table class="container">
-            <tbody id="papers-container">
-              <!-- Papers will be inserted here by papers.js -->
-            </tbody>
-          </table>
-
-          <!-- Sentinel for progressive loading of publications -->
-          <div id="pubs-sentinel" aria-hidden="true" style="height: 1px;"></div>
-
-          <!-- ==================== FOOTER ==================== -->
-          <!-- <table class="container">
-            <tbody>
-              <tr>
-                <td class="footer">
-                  <p>Webpage template from <a href="https://jonbarron.info/">Jon Barron</a></p>
-                </td>
-              </tr>
-            </tbody>
-          </table> -->
-
-          <!-- Visitor Map -->
-          <div style="text-align: center; margin-top: 20px;">
-            <script async defer type="text/javascript" id="clustrmaps"
-              src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=Nw0XudLjXOYI0iR0_DdWEx5iLNbBbxok29dpBzq9KZg&co=ffffff&cmo=afafaf&cmn=ff5353&ct=808080">
-              </script>
-          </div>
-
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-  <!-- ==================== NAVIGATION BAR ==================== -->
-  <nav class="right-nav">
-    <ul class="nav-links">
-      <li><a href="index.html" class="nav-link">Home</a></li>
-      <li><a href="pages/projects.html" class="nav-link">Past Projects</a></li>
-      <li><a href="pages/more.html" class="nav-link">More</a></li>
-    </ul>
-  </nav>
-
-  <!-- Progressive render + lazy image enhancer for publications -->
-  <script defer>
-    (function () {
-      function tinyTransparentGif() {
-        return 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
-      }
-
-      function enhancePubs() {
-        const container = document.getElementById('papers-container');
-        if (!container) return;
-
-        const items = Array.from(container.children);
-        const INITIAL = 8;     // render first 8 items immediately
-        const CHUNK = 8;       // then add 8 at a time on scroll
-
-        // Mark all publication images as lazy. For items beyond INITIAL,
-        // defer their image requests by swapping src -> data-src.
-        items.forEach((row, idx) => {
-          const imgs = row.querySelectorAll('img');
-          imgs.forEach(img => {
-            // Prefer browser-native lazy loading
-            if (!img.hasAttribute('loading')) img.loading = 'lazy';
-            img.decoding = 'async';
-            // Lower fetch priority for below-the-fold
-            try { img.fetchPriority = idx < INITIAL ? 'auto' : 'low'; } catch (_) { }
-
-            if (idx >= INITIAL) {
-              if (!img.dataset.src && img.src) {
-                img.dataset.src = img.src;
-                img.src = tinyTransparentGif();
-              }
-            }
-          });
-        });
-
-        // If there aren't enough items, nothing else to do.
-        if (items.length <= INITIAL) return;
-
-        // Hide all rows beyond the initial batch.
-        for (let i = INITIAL; i < items.length; i++) {
-          items[i].style.display = 'none';
-        }
-
-        let next = INITIAL;
-        const sentinel = document.getElementById('pubs-sentinel');
-        if (!sentinel) return;
-
-        const revealNextChunk = () => {
-          const end = Math.min(next + CHUNK, items.length);
-          for (let i = next; i < end; i++) {
-            const row = items[i];
-            row.style.display = '';
-
-            // Restore deferred images now that the row is visible.
-            row.querySelectorAll('img').forEach(img => {
-              if (img.dataset.src && (!img.src || img.src === tinyTransparentGif())) {
-                img.src = img.dataset.src;
-              }
-            });
-          }
-          next = end;
-          if (next >= items.length) {
-            observer.disconnect();
-          }
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-          for (const e of entries) {
-            if (e.isIntersecting) {
-              if ('requestIdleCallback' in window) {
-                requestIdleCallback(revealNextChunk, { timeout: 200 });
-              } else {
-                setTimeout(revealNextChunk, 0);
-              }
-            }
-          }
-        }, { rootMargin: '400px 0px' });
-
-        observer.observe(sentinel);
-      }
-
-      if (document.readyState === 'complete' || document.readyState === 'interactive') {
-        // papers.js is defer-loaded in <head>, so it runs before this defer script.
-        enhancePubs();
-      } else {
-        document.addEventListener('DOMContentLoaded', enhancePubs);
-      }
-    })();
-  </script>
+    <footer>
+      <nav aria-label="Site navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="pages/projects.html">Past Projects</a>
+        <a href="pages/more.html">More</a>
+      </nav>
+    </footer>
+  </main>
 </body>
 
 </html>

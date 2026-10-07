@@ -155,15 +155,11 @@ function renderPapers() {
     const container = document.getElementById('papers-container');
     if (!container) return;
 
-    papers.forEach(paper => {
-        const paperHTML = createPaperHTML(paper);
-        container.innerHTML += paperHTML;
-    });
+    container.innerHTML = papers.map(createPaperHTML).join('');
 }
 
-// Function to create HTML for a single paper
+// Paper data is maintained locally in this file.
 function createPaperHTML(paper) {
-    const hasHover = paper.hoverImage;
     const authorHTML = paper.authors.map(author => {
         if (author.highlight) {
             return `<strong>${author.name}</strong>`;
@@ -176,68 +172,30 @@ function createPaperHTML(paper) {
 
     const linksHTML = paper.links.map(link =>
         `<a href="${link.url}">${link.type}</a>`
-    ).join('\n                    ');
+    ).join('');
 
-    const imageHTML = hasHover ? `
-    <div class="one">
-      <div class="two" id='${paper.id}_hover'>
-        ${paper.videoType ? `
-        <video width="100%" height="100%" muted loop preload="none">
-          <source src="${paper.hoverImage}" type="video/mp4">
-        </video>
-        ` : `
-        <img src='${paper.hoverImage}' width="160" alt="${paper.title}" loading="lazy">
-        `}
-      </div>
-      <img src='${paper.image}' width="160" alt="${paper.title}" loading="lazy">
-    </div>
-  ` : `
-    <img src='${paper.image}' width="160" alt="${paper.title}" loading="lazy">
-  `;
-
-    const scriptHTML = hasHover ? `
-    <script type="text/javascript">
-      function ${paper.id}_start() { 
-        document.getElementById('${paper.id}_hover').style.opacity = "1";
-        ${paper.videoType ? `
-        var video = document.querySelector('#${paper.id}_hover video');
-        if (video) video.play();
-        ` : ''}
-      }
-      function ${paper.id}_stop() { 
-        document.getElementById('${paper.id}_hover').style.opacity = "0";
-        ${paper.videoType ? `
-        var video = document.querySelector('#${paper.id}_hover video');
-        if (video) video.pause();
-        ` : ''}
-      }
-      ${paper.id}_stop();
-    </script>
-  ` : '';
-
-    const hoverAttrs = hasHover ?
-        `onmouseout="${paper.id}_stop()" onmouseover="${paper.id}_start()"` : '';
+    const mediaHTML = paper.videoType && paper.hoverImage
+        ? `<video controls muted loop playsinline preload="none" poster="${paper.image}" aria-label="${paper.title}">
+             <source src="${paper.hoverImage}" type="video/mp4">
+           </video>`
+        : `<img src="${paper.image}" alt="${paper.title}" loading="lazy" decoding="async">
+           ${paper.hoverImage ? `<img src="${paper.hoverImage}" alt="${paper.title} — additional view" loading="lazy" decoding="async">` : ''}`;
 
     return `
-              <!-- ${paper.id.toUpperCase()} Paper -->
-              <tr class="paper-row" ${hoverAttrs}>
-                <td class="paper-image">
-                  ${imageHTML}
-                  ${scriptHTML}
-                </td>
-                <td class="paper-content">
-                  <papertitle>${paper.title}</papertitle>
-                  <div class="paper-authors">${authorHTML}</div>
-                  <div class="paper-venue">${paper.venue}</div>
-                  <div class="paper-links">
-                    ${linksHTML}
-                  </div>
-                  <p class="paper-description">
-                    ${paper.description}
-                  </p>
-                </td>
-              </tr>
-`;
+      <article class="paper-row" id="${paper.id}" aria-labelledby="${paper.id}-title">
+        <div class="paper-heading">
+          <h3 id="${paper.id}-title">${paper.links.length ? `<a href="${paper.links[0].url}">${paper.title}</a>` : paper.title}</h3>
+          <p class="paper-venue">${paper.venue}</p>
+        </div>
+        <div class="paper-authors">${authorHTML}</div>
+        <div class="paper-links">${linksHTML}</div>
+        <details class="paper-details">
+          <summary>Details<span class="sr-only"> for ${paper.title}</span></summary>
+          <p class="paper-description">${paper.description}</p>
+          ${mediaHTML}
+        </details>
+      </article>
+    `;
 }
 
 // Auto-render when DOM is loaded
