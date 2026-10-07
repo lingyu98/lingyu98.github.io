@@ -55,7 +55,10 @@
                                     { type: "slides", url: "https://..." }
                                 ],
 
-                                    // REQUIRED: Brief description of your work
+                                    // OPTIONAL: One-line summary displayed below the paper's resource links
+                                    summary: "Describe the paper's main idea in one short sentence.",
+
+                                    // OPTIONAL: Longer description kept in metadata, not displayed on the homepage
                                     description: "Write a 2-3 sentence description of your paper here. Explain the problem, your approach, and key results. Keep it concise but informative."
 }
 
