@@ -19,7 +19,6 @@
 
   <!-- Resource Hints -->
   <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
-  <link rel="preconnect" href="https://cdn.clustrmaps.com" crossorigin>
 
   <!-- Preload critical images for better performance -->
   <link rel="preload" as="image" href="images/profile2_masked.webp" fetchpriority="high">
@@ -173,13 +172,6 @@
             </tbody>
           </table> -->
 
-          <!-- Visitor Map -->
-          <div style="text-align: center; margin-top: 20px;">
-            <script async defer type="text/javascript" id="clustrmaps"
-              src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=300&t=n&d=Nw0XudLjXOYI0iR0_DdWEx5iLNbBbxok29dpBzq9KZg&co=ffffff&cmo=afafaf&cmn=ff5353&ct=808080">
-              </script>
-          </div>
-
         </td>
       </tr>
     </tbody>
@@ -194,6 +186,9 @@
     </ul>
   </nav>
 
+  <!-- MapMyVisitors: load the tracking image without displaying a map. -->
+  <img hidden alt="" loading="eager"
+    src="https://mapmyvisitors.com/map.png?d=45t8HfW4vssZTay-pXP2CqjtC1S3NbV58iTyhGi3lOg&amp;cl=ffffff">
 </body>
 
 </html>
